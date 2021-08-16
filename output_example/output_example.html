@@ -1,69 +1,3369 @@
-<!DOCTYPE HTML>
+
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>えせ小説投稿サイト</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            
-            <div class="container">
-                <div class="header-title-area">
-                    <h1 class="logo">小説閲覧ページ</h1>
-                    <p class="text-sub">閲覧したいタイトルをクリック</p>
-                </div>
-                <ul class="header-navigation">
-                    <li><a href="#">ジャンル</a></li>
-                    <li><a href="#">ランキング</a></li>
-                    <li><a href="#">新着</a></li>
-                    <li><a href="#">小説投稿</a></li>
-                </ul>
-            </div>
-        </header>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="40万以上のオンライン小説、携帯小説を掲載している投稿型の小説サイトです。小説検索、小説評価、ルビ・縦書き対応、高機能小説執筆機能など">
+<meta name="keywords" content="携帯小説,ケータイ小説,オンライン小説,縦書き小説,小説投稿,小説投稿サイト">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1088, maximum-scale=1.0, user-scalable=yes">
 
- <div class="main">
-  <div class="container">
-    <div class="left-contents">
-     <div class="card-contents">
-      <h2 class="text-title">Information</h2>
-  <ul class="information-list">
-    <li>2017/05/01 2号店がドイツにてオープンしました。</li>
-    <li>2017/04/01 春メニュー提供開始しました。</li>
-    <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
-  </ul>
- </div>
-    <div class="card-contents">
-      <h2 class="text-title">Staff</h2>
-      <div class="staff-list-area">
-        <div class="staff-list">
-          <img src="./staff_01.jpg" class="staff-image">
-          <p class="staff-name">Batty Obata</p>
-        </div>
-        <div class="staff-list">
-          <img src="./staff_02.jpg" class="staff-image">
-          <p class="staff-name">Infinity DOI</p>
-        </div>
-        <div class="staff-list">
-          <img src="./staff_03.jpg" class="staff-image">
-          <p class="staff-name">Moro Masa</p>
-        </div>
-       </div>
-     </div>
-    </div>
-    <div class="right-contents">
-      <div class="card-contents">
-       <h2 class="text-title">Access</h2>
-       <p>東京都渋谷区円山町28-3<br>いちご渋谷道玄坂ビル5F</p>
-       <p>渋谷駅より徒歩7分</p>
-      </div>
-    </div>
-  </div>
+<title>偽小説を読もう！</title>
+
+
+<link rel="alternate" type="application/atom+xml" href="https://api.syosetu.com/allnovel.Atom" title="Atom">
+<link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/base_yomou-pc.css?qugxcw">
+
+<link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/p_common-pc.css?qvr790"><link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/trad/base.css?qugxcx"><link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/trad/second.css?qugxcx"><link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/trad/rank.css?qugxcx">
+
+
+<script src="https://static.syosetu.com/view/js/lib/jquery/1.12.4/jquery.min.js?oks8j8"></script>
+
+<link rel="stylesheet" href="https://static.syosetu.com/view/css/lib/jqueryui/1.12.1/jquery-ui.min.css?oks8j8">
+<script src="https://static.syosetu.com/view/js/lib/jqueryui/1.12.1/jquery-ui.min.js?oks8j8"></script>
+
+<script src="https://static.syosetu.com/view/js/lib/jquery.hina.js?oyez8w"></script>
+<script src="https://static.syosetu.com/view/js/event/global_menu.js?psawph"></script>
+<script src="https://static.syosetu.com/sub/yomouview/js/global_menu.js?psawph"></script>
+<script src="https://static.syosetu.com/sub/yomouview/js/check_text.js?owywu2"></script>
+
+<script src="https://static.syosetu.com/view/js/smp_toggle.js?qsxen2"></script>
+
+
+<script type="text/javascript">
+var microadCompass = microadCompass || {};
+microadCompass.queue = microadCompass.queue || [];
+</script>
+<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async></script>
+
+</head>
+<body>
+
+
+<div class="l-header">
+<div class="p-header">
+<div class="p-header__inner">
+<h1 class="p-header__logo">
+<a href="file:///Users/kawakamikenta/Desktop/techboost/portfolio/output_example/output_example.html">
+  <img src="//static.syosetu.com/view/images/common/logo_yomou.png" alt="小説を読もう！"></a>
+</h1>
+<div class="p-header__description">
+小説を読もう！は｢小説家になろう｣に投稿された<br>
+Web小説<span class="p-header__count">899,337</span>作品を無料で読める・探せるサイトです。
 </div>
-<footer>
-  <p class="copyright">(C) 2017 Batty's Coffee Stand.</p>
-</footer>
+<div class="p-header__subnav">
+<ul class="p-header__subnav-list">
+<li class="p-header__subnav-item">
+<a href="//syosetu.com/site/about/"><span class="p-icon p-icon--wakaba" aria-hidden="true"></span>初めての方へ</a>
+</li>
+<li class="p-header__subnav-item">
+<a href="//syosetu.com/site/man/"><span class="p-icon p-icon--question" aria-hidden="true"></span>マニュアル</a>
+</li>
+<li class="p-header__subnav-item">
+<a href="//ssl.syosetu.com/login/input/"><span class="p-icon p-icon--login" aria-hidden="true"></span>ログイン</a>
+</li>
+<li class="p-header__subnav-item p-header__subnav-item--site">
+<a href="//syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_narou.png" alt="小説家になろう"></a>
+</li>
+</ul>
+<form class="c-form p-header__search js-quick-search" action="//yomou.syosetu.com/search.php">
+<div class="c-form__quicksearch">
+<select class="c-form__select c-form__select--accent" name="search_type">
+<option value="novel">小説</option>
+<option value="user">ユーザ</option>
+</select>
+<input class="c-form__quicksearch-text" type="text" name="word" placeholder="小説を検索">
+<button class="c-form__quicksearch-button" type="submit" name="button"><span class="p-icon p-icon--search" aria-label="検索"></span></button>
+</div>
+</form>
+</div>
+</div><!-- /.p-header__inner -->
+</div><!-- /.p-header -->
 
-    </body>
+<div class="p-main-nav">
+<ul class="p-main-nav__list">
+<li class="p-main-nav__item">
+<a href="//syosetu.com/favnovelmain/list/">
+<span class="p-icon p-icon--bookmark" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">ブックマーク</span>
+</a>
+</li>
+<li class="p-main-nav__item">
+<a href="//yomou.syosetu.com/rireki/list/">
+<span class="p-icon p-icon--watch" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">閲覧履歴</span>
+</a>
+</li>
+<li class="p-main-nav__item">
+<a href="//yomou.syosetu.com/rank/genretop/">
+<span class="p-icon p-icon--crown" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">ランキング</span>
+</a>
+</li>
+<li class="p-main-nav__item">
+<a href="//yomou.syosetu.com/search.php">
+<span class="p-icon p-icon--search" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">小説検索</span>
+</a>
+</li>
+<li class="p-main-nav__item p-main-nav__item--useradd">
+<a href="//ssl.syosetu.com/useradd/mailinput/">
+<span class="p-icon p-icon--user" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">ユーザ登録</span>
+</a>
+</li>
+</ul>
+</div>
+
+
+</div><!-- .l-header -->
+<div class="l-container">
+
+    <div id="trad" class="c-trad-contents">
+    
+<div id="main">
+<h2 class="ranking">ランキング</h2>
+<ul class="ranking_navi">
+<li class="on"><a href="/rank/genretop/">ジャンル別</a></li>
+<li class="change_rank"><a href="/rank/top/">総合</a></li>
+<li class="isekai_rank"><a href="/rank/isekaitop/">異世界転生/転移</a></li>
+</ul>
+
+<ul class="r_navilist">
+<li><a href="#genre_daily">日間</a></li>
+<li><a href="#genre_weekly">週間</a></li>
+<li><a href="#genre_monthly">月間</a></li>
+<li><a href="#genre_quarter">四半期</a></li>
+<li><a href="#genre_yearly">年間</a></li>
+</ul>
+
+<div class="rankmain_box">
+<div class="title_h2 opentab">
+<div class="h2_rank" id="genre_daily">ジャンル別日間ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box dummy">
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_101">異世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5190hd/">蘇り地味令嬢と髑髏（しゃれこうべ）令息〜復讐も地味に地道に〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2190550/">ジュレヌク</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5247hd/">愛する人ができたので婚約破棄したいと王太子殿下に相談されたので、有責でない私から婚約破棄に対するメリットとデメリットを提示してみた件について</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1275419/">ゆうな</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4688hd/">一般庶民ですが、浮気されて離婚した傷心中の貴族に見初められました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5468hd/">婚約破棄の裏側と王家の秘密</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1533134/">はぐれメタボ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4780hd/">聖女失格～普通でいいんです、最強の聖女にしてくれなんて頼んでません～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/924696/">永瀬さらさ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_101/">日間異世界〔恋愛〕ランキングを見る</a></div>
+</div>
+
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_102">現実世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3852hd/">戦地から帰ってきたタカシ君。普通に高校生活を送りたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1972228/">安い芸</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0463hd/">留学先の外国で出会った許婚は世界一可愛い女子で評判の銀髪碧眼の美少女でした</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1472085/">鉄人じゅす</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4472hd/">声優の義兄と女優の私の熱愛報道！誤解にはさせません。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2122877/">finneces</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5185hd/">後悔しないと分からない</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1704059/">美濃由乃</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3751hd/">告白されたのに振られたので、趣味に打ち込んだ結果、なんかすごいことになったんだけど？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2047590/">薄明</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_102/">日間現実世界〔恋愛〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_201">ハイファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1314hd/">魔術師クノンは見えている</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/215441/">南野海風</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3106hd/">【連載版】左遷された無能王子は実力を隠したい～二度転生した最強賢者、今世では楽したいので手を抜いてたら、王家を追放された。今更帰ってこいと言われても遅い、領民に実力がバレて、実家に帰してくれないから…</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2993hd/">【2章完結】「荷物持ちなんていらないんだよ」と勇者パーティを追放された外れスキル【略奪】使いの成り上がり英雄録～実は、モンスターのスキルを略奪していたので、勇者が倒していたのは雑魚だったんですよ？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1706972/">煙雨</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3511hb/">煤まみれの騎士　～かつては神童と呼ばれながらも授かった魔力がゼロだった男、蔑まれ迫害され元婚約者に仕えることになったけど諦めずに戦い続けます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2200724/">美浜ヨシヒコ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6783hb/">女好きの勇者に殺されかけたけど、効率を追求していたら『雷神』と言われるようになりました【一章完結・二章開始】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/621868/">なんじゃもんじゃ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_201/">日間ハイファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_202">ローファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2736hd/">現代のダンジョン化が始まる前に　～事前にレベル上げをしていた俺は、ダンジョン化した世界でも余裕です～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/637685/">一ノ瀬るちあ/エルティ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6031hc/">文明が崩壊して東京が魔物だらけになったのでチートスキルで自由に生きたいと思います    </a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/734561/">多田野ミケ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4215hc/">運</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1805349/">ひじきとコロッケ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4838hc/">アースウィズダンジョン　〜世界を救うのは好景気だよね</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1590710/">バッド</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0709ha/"> 学園ランキング最強はチートで無双する～能力はゴミだが、異世界転生で得たチートで能力者達を薙ぎ倒す～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1389003/">まんじ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_202/">日間ローファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+
+<div class="c-ad c-ad--bigbanner" style="margin-bottom: 40px">
+
+<div id="fec86779c5cb1f8c1e9f01443bec3b9d">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "fec86779c5cb1f8c1e9f01443bec3b9d",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div>
+
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_301">純文学〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6133hd/">ネゴシエーター桃子。鬼ヶ島に経済制裁を仕掛け、内紛を誘発し、国土を切り取る。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/457834/">間野　ハルヒコ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8796hc/">１０年不倫</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1383625/">青井青</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6319hd/">夕立。ねぇ、私の声は聴こえていて？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1329229/">秋の桜子</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5820hd/">夏休み延長相談窓口</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/810824/">鞠目</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8115hc/">あなたの夫婦愛、１億円で買います</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1383625/">青井青</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_301/">日間純文学〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_302">ヒューマンドラマ〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5466hd/">婚約破棄は別に良いのですが、貴方が自慢げに見せているそれは国家機密ですわよ？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1533134/">はぐれメタボ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5447hd/">毒舌侍女の嫁入り</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2147870/">結</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4138hd/">替わりはいくらでもいる</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2147870/">結</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6082hd/">「お姉さまずるい！！」が口癖の妹。妹に全てを奪われて不幸に……あら？不幸になるところが待遇が良くなるのですが</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1682203/">あかり</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0469hc/">最凶侯爵の逆鱗に触れた者達の末路</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/800354/">やとぎ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_302/">日間ヒューマンドラマ〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_303">歴史〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7588ha/">時霞　～信長の軍師～　【連載中】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2055863/">水野忠</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7128ha/">【完結保証】マイナー戦国武将に転生したのでのんびり生きようと思ったら、いきなり30万石の大名になってしまいました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1082971/">田島はる</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3991gz/">董卓の娘</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/269153/">神奈いです</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1520hd/">宮様は朝廷をどうにかしたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1835643/">羊の皮を被った仔羊</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0465fs/">劉璋に転生しました。蜀を取られないように頑張ります</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/528942/">遥か空に</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_303/">日間歴史〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_304">推理〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9636x/">薬屋のひとりごと</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/183213/">日向夏</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5690hc/">佐伯さんの下着が透けてることを後ろの席の僕だけが知っている〜ところで佐伯さん、毎日帰り際にボソッと下着の色を教えてくるのはなんでなの？〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2154674/">麻田セカイ　</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9273gz/">彼ぴっぴしゅきしゅきビーム殺人事件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/465813/">経済的ゾンビ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6764fu/">レベル１の俺が魔王を倒すと言ったら、みんな笑った。でも、前世が名探偵だったおかげで本当に倒してしまい……</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/266795/">からくらり</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2742gq/">継母は白雪姫を殺さない</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1787509/">じろー</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_304/">日間推理〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_305">ホラー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6177hd/">人を呪わば穴二つ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1944211/">栞</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2834hd/">続々・怪異の掃除人</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1567969/">長埜 恵</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7054hb/">探さないでください</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2190550/">ジュレヌク</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2512hd/">ヒロイン達が全員俺のことを生理的に無理な話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/215617/">夜明</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7079gl/">クラス全員からいじめを受けている僕は絶対呪われる駅の連絡通路に凸して実況ムービー撮ってきます。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/577534/">黒猫虎</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_305/">日間ホラー〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_306">アクション〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9736dt/">リビルドワールド</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/91636/">非公開</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7438gz/">国立大学法人東京魔術大学　─血継魔術科─</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2952/">おめがじょん</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1850hc/">二度目の人生の生存戦略！　～平穏な暮らしを殺してでもうばいとる～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/469556/">第616特別情報大隊</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1814gs/">人型巨大兵器〝に〟転生しました〜冷凍世界再点火〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2073978/">白色矮星（非テンプレ応援団）</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1730eu/">12ハロンのチクショー道【書籍化決定】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/285281/">野井ぷら</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_306/">日間アクション〔文芸〕ランキングを見る</a></div>
+</div>
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_307">コメディー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2418gr/">廃嫡寸前！？～侯爵家嫡男達の決断</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/902054/">斉藤寅蔵</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4033hd/">NOと言える公爵令嬢～婚約破棄される夢を見たので王家からの婚約拒否をします～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1412458/">迷羅電右衛門</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4414ha/">魔王軍を辞めたい暗黒騎士、やばい女騎士を拾う</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/245050/">溝上 良</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4976hd/">ラスボス系お姉さんの部屋にはエンディング後の隠し扉がありました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6176hd/">汚いものを容赦なく切り捨てる美化委員を美化せよ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_307/">日間コメディー〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_401">VRゲーム〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8581hc/">ネガティブ少女のテイマー配信録　～人間は怖いのでモンスターたちと暮らしながら配信してたらいつのまにか最強のプレイヤーになっていた件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1611776/">矢倉坂</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6705hc/">『Hereafter Apollyon Online』～超高クオリティクソゲーの生産職で巨大ロボット作って遊ぼうとしてるのですが何故か勘違いされます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2053751/">西沢東</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8329gj/">やがて最強のPKキラー（職業：商人）【旧題：やがて最強のPKK（職業：商人）】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/708593/">aaa</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7452hb/">いつの間にかチュートリアルおじさんとして人気者になっていた件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2164469/">ぼんちー</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6169dz/">シャングリラ・フロンティア〜クソゲーハンター、神ゲーに挑まんとす〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/474038/">硬梨菜</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_401/">日間VRゲーム〔SF〕ランキングを見る</a></div>
+</div>
+
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_402">宇宙〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9568gr/">【連載版】キモオタモブ傭兵は、身の程を弁(わきま)える</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1561683/">土竜</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7937gx/">なんかすごい性能の宇宙船を拾った</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/373143/">工具</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9572gj/">死んでやる～彼女を寝取られ、死ぬに死にきれないヘタレが巻き起こす宇宙活劇～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1015958/">のらしろ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3900ha/">アルビオン王国宙軍士官物語～クリフエッジと呼ばれた男～（クリフエッジシリーズ合本版）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/284675/">愛山　雄町</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6685ep/">【告知漫画公開】乙女ゲームのハードモードで生きています【書籍化・2021年7月刊行】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/351196/">赤野用介</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_402/">日間宇宙〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_403">空想科学〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6054hd/">警視庁エイリアン犯罪対策課</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/199267/">夏川優希</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5489hc/">その復讐に、太古のオーバー・テクノロジーはいかがですか？　〜解雇どころか生贄にされた戦力外兵士、戦術ＡＩ少女と新国家を立ち上げ、祖国に宣戦布告する模様〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2180065/">嵯鞠　増男</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0680dh/">██▚　現代魔術は異世界をクロールするか ： 数理科学による魔術の始め方　▚██</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/638427/">▚ Richard Roe ▚</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6608gz/">近未来の地球に飛ばされた俺は、チートな戦車でドッカンドッカン大砲ぶっ放して、ハーレム作って片手間で荒廃した地球を救ってやんよ、とは真逆のおっさんが生き残るため四苦八苦する話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1908556/">ゴエモン</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2655gv/">貞操観念が逆転した宇宙人の軍隊でエースパイロットの俺だけが唯一男な話【書籍化決定！】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1357432/">寒天ゼリヰ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_403/">日間空想科学〔SF〕ランキングを見る</a></div>
+</div>
+
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_404">パニック〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0308ha/">無職マンのゾンビサバイバル生活。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1507681/">秋津</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4005gv/">沈没から始まるオッサンとJKのサバイバル漂流記　～絶対絶命のピンチのはずなのに当事者たちは案外エンジョイしている件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/869158/">かるちぇ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9870gd/">【コミカライズ】異世界還りのおっさんは終末世界で無双する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1885720/">羽々音色</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6582gt/">異世界帰り・オブ・ザ・デッド　帰ってきた現代で始まるゾンビパニックを異世界の能力で生き残れ！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1986772/">時をかけたい少女</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5197hb/">予知と解析</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/61336/">こる．</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_404/">日間パニック〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_9901">童話〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9759gx/">各方面に配慮した桃次郎と桃子（順不同）≪ルビ付≫【There’s English】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1119hc/">元勇者のおじいさんと元聖女のおばあさんが秒で全てを解決する昔話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6258hd/">『あかつきのきつねとうさぎ』～さいきょうになりたいうさぎさんと、のんびりしてたいきつねさんのおはなし～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1470441/">日向　るきあ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6562hd/">お月さまのかくれんぼ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1890179/">小畠愛子</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6234hd/">赤になれないカメレオン</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/783507/">入海月子</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_9901/">日間童話〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_9902">詩〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6722hd/">今日も会いに行った</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2080437/">星花 愛</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6264hd/">魂レベルが高い人</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2080437/">星花 愛</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6785hd/">Quest…</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1907930/">すみいちろ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6555hd/">何もできないって嘆くけど</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1883357/">朝焼 悠</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6331hd/">雨の日の決意</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2033914/">衣谷強</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_9902/">日間詩〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_9903">エッセイ〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6749hd/">猫じゃらしという無料のもふもふ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1964264/">ひだまりのねこ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6208hd/">『唯我独尊なろう道！ 』を貫き、第9回ネット小説大賞の1次選考を通過しました。こんな世の中はおかしい＼(^o^)／！  ですから、「なろう」の地殻変動を考察します。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1729873/">シサマ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5924hd/">第９回ネット小説大賞に落選してしまった方々に贈りたい応援エッセイ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1689986/">翔という者</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6185hd/">ラーメンを極めた私が近年のラーメン家になろうに一言物申したい。味噌ラーメン食おうぜ！！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5752hd/">ジャンル詐欺の強心臓は尊敬する。が、許すとは言ってない。〜それは人を貶す行為と一緒ですよ！〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1302968/">空野奏多</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_9903/">日間エッセイ〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="daily_9999">その他〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9032dk/">お前のせいで、おれの人生は滅茶苦茶だ。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/196158/">甘木智彬</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5266hd/">どうして質問が3つだけなのか、わかりますか？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/532245/">しまうま</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3065fd/">勇者「魔王倒したし帰るか」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/290353/">湯葉</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4243er/">悪の大幹部ですけど戦隊レッドが自殺した様です</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/773959/">からくり8</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8030gv/">愛するが故に</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/248544/">ひつじかい</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/daily_9999/">日間その他〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="ranking_ll"><a href="#">▲ページ上部へ戻る</a></div>
+</div><!-- ranking_top5box -->
+
+
+<div class="c-ad c-ad--bigbanner" style="margin-bottom:40px;">
+
+<div id="d04a81b86b6e4a1cdc6f9ba9285ee24e">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "d04a81b86b6e4a1cdc6f9ba9285ee24e",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div>
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="genre_weekly">ジャンル別週間ランキングBEST5</div>
+</div><!-- title_h2 opentab -->
+
+<div class="ranking_top5box dummy">
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_101">異世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2688hd/">婚約破棄を告げられましたが、理由がわからなかったので思うところを述べていったら、謝罪された件について</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1662677/">里見知美</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3930hd/">もう、諦めたりしない。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1850688/">あんこ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4688hd/">一般庶民ですが、浮気されて離婚した傷心中の貴族に見初められました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0521hc/">ニセモノ聖女が本物に担ぎ上げられるまでのその過程</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1247986/">エイ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3110hd/">婚約者が友人たちと婚約破棄を企んでいたので交ざってみた</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1584491/">綿雪</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_101/">週間異世界〔恋愛〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_102">現実世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4472hd/">声優の義兄と女優の私の熱愛報道！誤解にはさせません。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2122877/">finneces</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3852hd/">戦地から帰ってきたタカシ君。普通に高校生活を送りたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1972228/">安い芸</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3751hd/">告白されたのに振られたので、趣味に打ち込んだ結果、なんかすごいことになったんだけど？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2047590/">薄明</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1180hd/">女嫌いの俺は陰キャの皮をかぶることにしたのだが、どうも上手くいかない。ＡＶ女優顔負けの小玉スイカ美人教師が俺に食いついた。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1564976/">一色姫凛</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0463hd/">留学先の外国で出会った許婚は世界一可愛い女子で評判の銀髪碧眼の美少女でした</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1472085/">鉄人じゅす</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_102/">週間現実世界〔恋愛〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_201">ハイファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3106hd/">【連載版】左遷された無能王子は実力を隠したい～二度転生した最強賢者、今世では楽したいので手を抜いてたら、王家を追放された。今更帰ってこいと言われても遅い、領民に実力がバレて、実家に帰してくれないから…</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3511hb/">煤まみれの騎士　～かつては神童と呼ばれながらも授かった魔力がゼロだった男、蔑まれ迫害され元婚約者に仕えることになったけど諦めずに戦い続けます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2200724/">美浜ヨシヒコ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1314hd/">魔術師クノンは見えている</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/215441/">南野海風</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9122hc/">スキル『鑑定』に目覚めたので、いつも優しい巨乳な受付嬢を鑑定したら、戦闘力99999の魔王な上にパットだった件について～気づかなかったことにしようとしてももう遅い……ですかね？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1612788/">高野　ケイ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6783hb/">女好きの勇者に殺されかけたけど、効率を追求していたら『雷神』と言われるようになりました【一章完結・二章開始】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/621868/">なんじゃもんじゃ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_201/">週間ハイファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_202">ローファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6031hc/">文明が崩壊して東京が魔物だらけになったのでチートスキルで自由に生きたいと思います    </a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/734561/">多田野ミケ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2736hd/">現代のダンジョン化が始まる前に　～事前にレベル上げをしていた俺は、ダンジョン化した世界でも余裕です～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/637685/">一ノ瀬るちあ/エルティ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4215hc/">運</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1805349/">ひじきとコロッケ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0709ha/"> 学園ランキング最強はチートで無双する～能力はゴミだが、異世界転生で得たチートで能力者達を薙ぎ倒す～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1389003/">まんじ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3769hc/"> 異世界らくらく億万長者～俺だけ使えるスキル【トレジャーコレクション】で宝を無限に引き寄せる～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/231817/">相野仁</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_202/">週間ローファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_301">純文学〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8796hc/">１０年不倫</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1383625/">青井青</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9776hc/">未完成婚</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1383625/">青井青</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4852hd/">久々の帰省</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8115hc/">あなたの夫婦愛、１億円で買います</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1383625/">青井青</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8625hb/">私が犯した罪について</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_301/">週間純文学〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_302">ヒューマンドラマ〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4138hd/">替わりはいくらでもいる</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2147870/">結</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0469hc/">最凶侯爵の逆鱗に触れた者達の末路</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/800354/">やとぎ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6917ha/">気が付いたら競走馬に生まれ変わっていました。でも、競馬の知識は０なんです！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/202121/">南辺万里</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5466hd/">婚約破棄は別に良いのですが、貴方が自慢げに見せているそれは国家機密ですわよ？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1533134/">はぐれメタボ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3921hd/">私、悪役令嬢ではありませんの</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2147870/">結</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_302/">週間ヒューマンドラマ〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_303">歴史〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8961gy/">未来から吹いた風　～５人でひっくりかえす太平洋戦争～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/761654/">青雲あゆむ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7128ha/">【完結保証】マイナー戦国武将に転生したのでのんびり生きようと思ったら、いきなり30万石の大名になってしまいました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1082971/">田島はる</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3991gz/">董卓の娘</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/269153/">神奈いです</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7588ha/">時霞　～信長の軍師～　【連載中】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2055863/">水野忠</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1520hd/">宮様は朝廷をどうにかしたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1835643/">羊の皮を被った仔羊</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_303/">週間歴史〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_304">推理〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9636x/">薬屋のひとりごと</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/183213/">日向夏</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5690hc/">佐伯さんの下着が透けてることを後ろの席の僕だけが知っている〜ところで佐伯さん、毎日帰り際にボソッと下着の色を教えてくるのはなんでなの？〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2154674/">麻田セカイ　</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6764fu/">レベル１の俺が魔王を倒すと言ったら、みんな笑った。でも、前世が名探偵だったおかげで本当に倒してしまい……</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/266795/">からくらり</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2757hd/">屏風の虎は、いつ帰ってくるのか</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9273gz/">彼ぴっぴしゅきしゅきビーム殺人事件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/465813/">経済的ゾンビ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_304/">週間推理〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_305">ホラー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2512hd/">ヒロイン達が全員俺のことを生理的に無理な話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/215617/">夜明</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3183hd/">神様かくれんぼ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/72988/">コーチャー</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1334hd/">貴方のＤＮＡを、５Ｇの電波から守るためには</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/380051/">竹尾　練治</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7054hb/">探さないでください</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2190550/">ジュレヌク</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7079gl/">クラス全員からいじめを受けている僕は絶対呪われる駅の連絡通路に凸して実況ムービー撮ってきます。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/577534/">黒猫虎</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_305/">週間ホラー〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_306">アクション〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9736dt/">リビルドワールド</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/91636/">非公開</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7438gz/">国立大学法人東京魔術大学　─血継魔術科─</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2952/">おめがじょん</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1730eu/">12ハロンのチクショー道【書籍化決定】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/285281/">野井ぷら</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1850hc/">二度目の人生の生存戦略！　～平穏な暮らしを殺してでもうばいとる～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/469556/">第616特別情報大隊</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0432fz/">異世界ＳＦ！　ＦＰＳ！　『カラフ撤退戦』</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/255884/">黒色粉末</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_306/">週間アクション〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_307">コメディー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4414ha/">魔王軍を辞めたい暗黒騎士、やばい女騎士を拾う</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/245050/">溝上 良</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2418gr/">廃嫡寸前！？～侯爵家嫡男達の決断</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/902054/">斉藤寅蔵</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2126hd/">夏休みの宿題をフリマアプリで売ってみた</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/810824/">鞠目</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7634hc/">美少女である事が最大の“地雷”だった～最愛の人を寝取られる可能性“ネトラレリスク”を回避する為に、絶対に守るべき六つの戒め～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2117462/">こだわりシンドローム</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3042hd/">ラスボス系お姉さん</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_307/">週間コメディー〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_401">VRゲーム〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8581hc/">ネガティブ少女のテイマー配信録　～人間は怖いのでモンスターたちと暮らしながら配信してたらいつのまにか最強のプレイヤーになっていた件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1611776/">矢倉坂</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7452hb/">いつの間にかチュートリアルおじさんとして人気者になっていた件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2164469/">ぼんちー</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3398fz/">【連載再開！】ブレイドスキル・オンライン　～ゴミ職業『サモナー』で最弱武器『弓使い』でクソステータス『幸運値極振り』の俺、いつのまにか『ラスボス』に成り上がります！～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1339258/">馬路まんじ@本日、マンガ版「底辺領主の勘違い英雄譚」の新刊発売！</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6169dz/">シャングリラ・フロンティア〜クソゲーハンター、神ゲーに挑まんとす〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/474038/">硬梨菜</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8329gj/">やがて最強のPKキラー（職業：商人）【旧題：やがて最強のPKK（職業：商人）】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/708593/">aaa</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_401/">週間VRゲーム〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_402">宇宙〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7937gx/">なんかすごい性能の宇宙船を拾った</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/373143/">工具</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9568gr/">【連載版】キモオタモブ傭兵は、身の程を弁(わきま)える</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1561683/">土竜</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3900ha/">アルビオン王国宙軍士官物語～クリフエッジと呼ばれた男～（クリフエッジシリーズ合本版）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/284675/">愛山　雄町</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4305hd/">宇宙探査に出発した当日に告白する奴</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6685ep/">【告知漫画公開】乙女ゲームのハードモードで生きています【書籍化・2021年7月刊行】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/351196/">赤野用介</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_402/">週間宇宙〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_403">空想科学〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5489hc/">その復讐に、太古のオーバー・テクノロジーはいかがですか？　〜解雇どころか生贄にされた戦力外兵士、戦術ＡＩ少女と新国家を立ち上げ、祖国に宣戦布告する模様〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2180065/">嵯鞠　増男</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4261ha/"> “冒険者アプリ”で片田舎の高校生が現代冒険者生活を送る少し未来のお話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/164671/">ダイスケ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0680dh/">██▚　現代魔術は異世界をクロールするか ： 数理科学による魔術の始め方　▚██</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/638427/">▚ Richard Roe ▚</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6608gz/">近未来の地球に飛ばされた俺は、チートな戦車でドッカンドッカン大砲ぶっ放して、ハーレム作って片手間で荒廃した地球を救ってやんよ、とは真逆のおっさんが生き残るため四苦八苦する話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1908556/">ゴエモン</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2655gv/">貞操観念が逆転した宇宙人の軍隊でエースパイロットの俺だけが唯一男な話【書籍化決定！】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1357432/">寒天ゼリヰ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_403/">週間空想科学〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_404">パニック〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0308ha/">無職マンのゾンビサバイバル生活。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1507681/">秋津</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4005gv/">沈没から始まるオッサンとJKのサバイバル漂流記　～絶対絶命のピンチのはずなのに当事者たちは案外エンジョイしている件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/869158/">かるちぇ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9870gd/">【コミカライズ】異世界還りのおっさんは終末世界で無双する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1885720/">羽々音色</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5197hb/">予知と解析</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/61336/">こる．</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4614hd/">澄んだ青空を見上げて</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/758434/">ヴィルヘルミナ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_404/">週間パニック〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_9901">童話〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9759gx/">各方面に配慮した桃次郎と桃子（順不同）≪ルビ付≫【There’s English】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1119hc/">元勇者のおじいさんと元聖女のおばあさんが秒で全てを解決する昔話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4075hd/">セミの恩返し</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4800gy/">もう遅いと言われた男の話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/956688/">曲尾　仁庵</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4309hd/">ノアの旅</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1005573/">彩瀬あいり</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_9901/">週間童話〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_9902">詩〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6264hd/">魂レベルが高い人</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2080437/">星花 愛</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3534hd/">意地っ張りなティータイム</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2080437/">星花 愛</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5577hd/">私とワルツを</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2181005/">糸</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5645hd/">一途に生きたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2080437/">星花 愛</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2994hd/">ブクマという栞</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1706021/">黒鯛の刺身♪</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_9902/">週間詩〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_9903">エッセイ〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4474hd/">お願い採りすぎないで！！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1964264/">ひだまりのねこ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8955hc/">熊エッセイ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1236912/">熊ノ翁</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4444hd/">給食のおばちゃんを左端から抱きしめていきたい。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1963116/">江古左だり</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3494hd/">身近にある異世界～その声聞こえますか？～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1964264/">ひだまりのねこ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5924hd/">第９回ネット小説大賞に落選してしまった方々に贈りたい応援エッセイ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1689986/">翔という者</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_9903/">週間エッセイ〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="weekly_9999">その他〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4243er/">悪の大幹部ですけど戦隊レッドが自殺した様です</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/773959/">からくり8</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3065fd/">勇者「魔王倒したし帰るか」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/290353/">湯葉</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9032dk/">お前のせいで、おれの人生は滅茶苦茶だ。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/196158/">甘木智彬</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3550gs/">妊娠した婚約者を婚約破棄して捨てた（後日談）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/248544/">ひつじかい</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8030gv/">愛するが故に</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/248544/">ひつじかい</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/weekly_9999/">週間その他〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="ranking_ll"><a href="#">▲ページ上部へ戻る</a></div>
+</div><!-- ranking_top5box dummy -->
+
+
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="genre_monthly">ジャンル別月間ランキングBEST5</div>
+</div><!-- title_h2 opentab -->
+
+<div class="ranking_top5box dummy">
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_101">異世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3032hc/">無自覚な天才少女は気付かない</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/851881/">まきぶろ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1929hb/">三食昼寝付き生活を約束してください、公爵様</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1574082/">チカフジ　ユキ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7310hb/">【完結】めでたく婚約破棄が成立したので、自由気ままに生きようと思います</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7470hc/">ランベルト家の特殊な家庭事情</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2227195/">明石　みなも</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6691hc/">伯爵家を守るためにとりあえず婚約しました（仮）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1086168/">しののめめい</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_101/">月間異世界〔恋愛〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_102">現実世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7066hb/">負けヒロインの相手をしていたらいつの間にか付き合っていると勘違いされ、勝ちヒロインのはずの幼馴染みが怒り修羅場になった</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1156283/">ネコクロ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2854hc/">【第１章完結】心に傷を負った者同士で慰め合っていたら白雪姫（学校一の美少女）とバカップル認定されていた件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2153243/">しゅう</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2694hc/">苦学生の俺が金に目が眩んでグレー寄りの真っ黒の民間警備会社でアルバイトを始めたら、護衛対象の普通じゃない女の子達に囲まれるなんて聞いてない！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2004863/">白熊獣</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4472hd/">声優の義兄と女優の私の熱愛報道！誤解にはさせません。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2122877/">finneces</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7070gz/">実家に帰ったら甘やかされ生活が始まりました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/624720/">月夜乃 古狸</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_102/">月間現実世界〔恋愛〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_201">ハイファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5792hc/">【連載版】落ちこぼれギルド職員、早く帰るためSランク召喚士としてボスを倒してた〜「定時で帰るから」と追放した癖に、今更戻ってこいと言われても遅い。僕は病弱な妹のためホワイトな冒険者ギルドに再就職した</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3511hb/">煤まみれの騎士　～かつては神童と呼ばれながらも授かった魔力がゼロだった男、蔑まれ迫害され元婚約者に仕えることになったけど諦めずに戦い続けます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2200724/">美浜ヨシヒコ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0424hb/">魔道書『ゲーティア』</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/522852/">レメゲトン</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6783hb/">女好きの勇者に殺されかけたけど、効率を追求していたら『雷神』と言われるようになりました【一章完結・二章開始】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/621868/">なんじゃもんじゃ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1405hb/">生まれた直後に捨てられたけど、前世が大賢者だったので余裕で生きてます</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/786569/">九頭七尾</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_201/">月間ハイファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_202">ローファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4215hc/">運</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1805349/">ひじきとコロッケ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9954hb/">僕は今すぐ前世の記憶を捨てたい。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/8818/">旭</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1125hb/">ゲートの出現で魔物があふれ人を襲い始めた【山奥で一人で戦いＤＩＹにハマる男が居た】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2070397/">ハンゼン</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9967hb/">僕は、ダンジョンに入る</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2041239/">Rapu</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2936ha/">最弱冒険者が【完全ドロップ】で現代最強　自分だけのレアスキルとカスタムアビリティを駆使して他の誰より強くなる！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/414899/">萩鵜アキ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_202/">月間ローファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_301">純文学〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8796hc/">１０年不倫</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1383625/">青井青</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8625hb/">私が犯した罪について</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6920hc/">その課金には訳がある</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2941gv/">【１】宮廷書記官リットの優雅な生活</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1403149/">鷹野　進</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9846hc/">トラック転生にまつわる社会問題とその解決案について</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1748221/">ハーピスト </a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_301/">月間純文学〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_302">ヒューマンドラマ〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0469hc/">最凶侯爵の逆鱗に触れた者達の末路</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/800354/">やとぎ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7715hb/">Killer Queen～FPSで幼馴染(美少女)を最高に幸せにする方法～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2115611/">九道弓</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6246hc/">アルトリアス伯爵の受難</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/391508/">鷹村紅士</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4913hc/">婚約破棄の代償</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1682203/">あかり</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4138hd/">替わりはいくらでもいる</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2147870/">結</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_302/">月間ヒューマンドラマ〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_303">歴史〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7588ha/">時霞　～信長の軍師～　【連載中】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2055863/">水野忠</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7128ha/">【完結保証】マイナー戦国武将に転生したのでのんびり生きようと思ったら、いきなり30万石の大名になってしまいました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1082971/">田島はる</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8961gy/">未来から吹いた風　～５人でひっくりかえす太平洋戦争～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/761654/">青雲あゆむ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0962hc/">なにわの総統一代記</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1312005/">マイソフ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3991gz/">董卓の娘</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/269153/">神奈いです</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_303/">月間歴史〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_304">推理〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9636x/">薬屋のひとりごと</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/183213/">日向夏</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5690hc/">佐伯さんの下着が透けてることを後ろの席の僕だけが知っている〜ところで佐伯さん、毎日帰り際にボソッと下着の色を教えてくるのはなんでなの？〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2154674/">麻田セカイ　</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9273gz/">彼ぴっぴしゅきしゅきビーム殺人事件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/465813/">経済的ゾンビ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6764fu/">レベル１の俺が魔王を倒すと言ったら、みんな笑った。でも、前世が名探偵だったおかげで本当に倒してしまい……</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/266795/">からくらり</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4474hc/">おーい、Gori！　犯人を教えて！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_304/">月間推理〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_305">ホラー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4456hc/">娘が「悪役令嬢」に憑り殺された日。あるいは、あの子が死んだ日の話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2201884/">紫苑</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0710hc/">わたし、トイレの花子さん。今いかついオッサン除霊師から隠れているの。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1209761/">浅月 大</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2512hd/">ヒロイン達が全員俺のことを生理的に無理な話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/215617/">夜明</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8820hb/">乗っ取られたら乗っ取り返せばいいのですよ、王妃さま。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2110251/">牧村 多希</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5079ew/">ホラーデータ～ネット上に転がっていそうなサクッと読める怖い話～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/874433/">色部　湯兎</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_305/">月間ホラー〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_306">アクション〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9736dt/">リビルドワールド</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/91636/">非公開</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7438gz/">国立大学法人東京魔術大学　─血継魔術科─</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2952/">おめがじょん</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1850hc/">二度目の人生の生存戦略！　～平穏な暮らしを殺してでもうばいとる～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/469556/">第616特別情報大隊</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1730eu/">12ハロンのチクショー道【書籍化決定】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/285281/">野井ぷら</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1814gs/">人型巨大兵器〝に〟転生しました〜冷凍世界再点火〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2073978/">白色矮星（非テンプレ応援団）</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_306/">月間アクション〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_307">コメディー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4414ha/">魔王軍を辞めたい暗黒騎士、やばい女騎士を拾う</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/245050/">溝上 良</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8977hb/">勇者、辞退します。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1772895/">獅子柚子</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7634hc/">美少女である事が最大の“地雷”だった～最愛の人を寝取られる可能性“ネトラレリスク”を回避する為に、絶対に守るべき六つの戒め～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2117462/">こだわりシンドローム</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7668gf/">「第二王子が婚約破棄したってよ！」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/87375/">八月 あやの</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0362hc/">過疎村ファンタジー</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1863272/">ぽよ子</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_307/">月間コメディー〔文芸〕ランキングを見る</a></div>
+</div>
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_401">VRゲーム〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7452hb/">いつの間にかチュートリアルおじさんとして人気者になっていた件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2164469/">ぼんちー</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8581hc/">ネガティブ少女のテイマー配信録　～人間は怖いのでモンスターたちと暮らしながら配信してたらいつのまにか最強のプレイヤーになっていた件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1611776/">矢倉坂</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2841hb/">TSしちゃったからスパチャ暮らし求めてVRゲームの実況者になります　～見た目メスガキ、頭脳は修羅～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/805392/">原初</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8329gj/">やがて最強のPKキラー（職業：商人）【旧題：やがて最強のPKK（職業：商人）】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/708593/">aaa</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6169dz/">シャングリラ・フロンティア〜クソゲーハンター、神ゲーに挑まんとす〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/474038/">硬梨菜</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_401/">月間VRゲーム〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_402">宇宙〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7937gx/">なんかすごい性能の宇宙船を拾った</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/373143/">工具</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3900ha/">アルビオン王国宙軍士官物語～クリフエッジと呼ばれた男～（クリフエッジシリーズ合本版）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/284675/">愛山　雄町</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9568gr/">【連載版】キモオタモブ傭兵は、身の程を弁(わきま)える</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1561683/">土竜</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6685ep/">【告知漫画公開】乙女ゲームのハードモードで生きています【書籍化・2021年7月刊行】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/351196/">赤野用介</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9850gz/">多分……、宇宙もの……。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1133822/">わだつみ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_402/">月間宇宙〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_403">空想科学〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6608gz/">近未来の地球に飛ばされた俺は、チートな戦車でドッカンドッカン大砲ぶっ放して、ハーレム作って片手間で荒廃した地球を救ってやんよ、とは真逆のおっさんが生き残るため四苦八苦する話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1908556/">ゴエモン</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2655gv/">貞操観念が逆転した宇宙人の軍隊でエースパイロットの俺だけが唯一男な話【書籍化決定！】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1357432/">寒天ゼリヰ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0680dh/">██▚　現代魔術は異世界をクロールするか ： 数理科学による魔術の始め方　▚██</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/638427/">▚ Richard Roe ▚</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5489hc/">その復讐に、太古のオーバー・テクノロジーはいかがですか？　〜解雇どころか生贄にされた戦力外兵士、戦術ＡＩ少女と新国家を立ち上げ、祖国に宣戦布告する模様〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2180065/">嵯鞠　増男</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4261ha/"> “冒険者アプリ”で片田舎の高校生が現代冒険者生活を送る少し未来のお話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/164671/">ダイスケ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_403/">月間空想科学〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_404">パニック〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0308ha/">無職マンのゾンビサバイバル生活。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1507681/">秋津</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5197hb/">予知と解析</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/61336/">こる．</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4005gv/">沈没から始まるオッサンとJKのサバイバル漂流記　～絶対絶命のピンチのはずなのに当事者たちは案外エンジョイしている件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/869158/">かるちぇ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9870gd/">【コミカライズ】異世界還りのおっさんは終末世界で無双する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1885720/">羽々音色</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6582gt/">異世界帰り・オブ・ザ・デッド　帰ってきた現代で始まるゾンビパニックを異世界の能力で生き残れ！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1986772/">時をかけたい少女</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_404/">月間パニック〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_9901">童話〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1119hc/">元勇者のおじいさんと元聖女のおばあさんが秒で全てを解決する昔話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9759gx/">各方面に配慮した桃次郎と桃子（順不同）≪ルビ付≫【There’s English】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4800gy/">もう遅いと言われた男の話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/956688/">曲尾　仁庵</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4041hc/">サンドリヨンは悪女の名</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1414848/">FT</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5775ha/">魔王は玉座で「もう遅いのだ」とつぶやいた</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/956688/">曲尾　仁庵</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_9901/">月間童話〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_9902">詩〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3246hc/">恋は花火のように</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1653522/">しましまにゃんこ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5298hc/">夏恋</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1924237/">椎名ユズキ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9659hc/">時と砂が、夢見る先に</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1778570/">みこと。</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3968hc/">森の小さなパン屋さん</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2181005/">糸</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5344hc/">夜•射的</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1996265/">黒森  冬炎</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_9902/">月間詩〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_9903">エッセイ〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8955hc/">熊エッセイ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1236912/">熊ノ翁</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2195hc/">ナースのひとりごと（ワクチン接種）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2046241/">工藤まなみ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1519hc/">ファンタジー作品で個人的にツッコミたくなる展開あれこれ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2026348/">HOT-GG</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1585hd/">「日本が豊かになったのは今の高齢者たちのやる気と根性のおかげだ！」と息巻く方がいたので、高度経済成長の要因を色々並べてみた</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2082320/">仙道アリマサ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4474hd/">お願い採りすぎないで！！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1964264/">ひだまりのねこ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_9903/">月間エッセイ〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="monthly_9999">その他〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4512hb/">転生して病んで復活したTS娘がvtuberやる話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1682724/">lost</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4243er/">悪の大幹部ですけど戦隊レッドが自殺した様です</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/773959/">からくり8</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3065fd/">勇者「魔王倒したし帰るか」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/290353/">湯葉</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3020hc/">それは短編じゃない</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/271839/">RK</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6549hc/">文学的クレクレ論</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/monthly_9999/">月間その他〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="ranking_ll"><a href="#">▲ページ上部へ戻る</a></div>
+</div><!-- ranking_top5box dummy -->
+
+
+
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="genre_quarter">ジャンル別四半期ランキングBEST5</div>
+</div><!-- title_h2 opentab -->
+
+<div class="ranking_top5box dummy">
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_101">異世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0174gy/">ブサイクで有名な令嬢と婚約した。彼女はとても可愛らしい性格の人だった。　～『ゴブリン令嬢』と蔑まれる令嬢に恋した美貌の令息が彼女を幸せにしようと奮闘する物語～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1281198/">新天新地</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1929hb/">三食昼寝付き生活を約束してください、公爵様</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1574082/">チカフジ　ユキ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0686gz/">【書籍化＆コミカライズ】能ある地味姫は正体を隠す。〜婚約破棄されたので、もう我慢しなくてもいいですよね？〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/838366/">蓮実 アラタ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5775gz/">【書籍化】婚約破棄されたのに元婚約者の結婚式に招待されました。断れないので兄の友人に同行してもらいます</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/171877/">ナナカ・かずね</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7310hb/">【完結】めでたく婚約破棄が成立したので、自由気ままに生きようと思います</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_101/">四半期異世界〔恋愛〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_102">現実世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7070gz/">実家に帰ったら甘やかされ生活が始まりました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/624720/">月夜乃 古狸</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5038gy/">【連載版】「あんたが神作家なわけないでしょ」と幼馴染みからバカにされたうえに振られた～陰キャな僕が書いたWEB小説が書籍化・アニメ化・映画化までされた後に、作者が実は僕だったと気付いたところでもう遅い</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2412ha/">好きだった幼馴染と可愛がってた後輩に裏切られたので、晴れて女性不信になりました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1777503/">リョウタ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1100gz/">幼馴染みに浮気され捨てられた結果、アイドルと付き合うことになった</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1595264/">絢乃</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7066hb/">負けヒロインの相手をしていたらいつの間にか付き合っていると勘違いされ、勝ちヒロインのはずの幼馴染みが怒り修羅場になった</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1156283/">ネコクロ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_102/">四半期現実世界〔恋愛〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_201">ハイファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9624gu/">弱小領地の生存戦略！　～俺の領地が何度繰り返しても滅亡するんだけど。これ、どうしたら助かりますか？～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1912800/">征夷冬将軍ヤマシタ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9925gz/">戦闘力のないハズレ才能【翻訳】で古代魔導書を読み漁っていたら世界最強になってました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1493546/">蒼乃白兎</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8166ha/">公爵家の小さな料理番様</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/638162/">延野正行</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8797gv/">レベルダウンの罠から始まるアラサー男の万能生活</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/876591/">ジルコ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0826gy/">【書籍化＆コミカライズ】創成魔法の再現者　～『魔法が使えない』と実家を追放された天才少年、魔女の弟子となり正しい方法で全ての魔法を極めます。貴方の魔法は、こうやって使うんですよ？～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1770987/">みわもひ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_201/">四半期ハイファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_202">ローファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2936ha/">最弱冒険者が【完全ドロップ】で現代最強　自分だけのレアスキルとカスタムアビリティを駆使して他の誰より強くなる！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/414899/">萩鵜アキ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7366gz/">鑑定士はレベルアップする　〜鑑定で得た情報を動画配信したら、それを見た人が倒した魔物の経験値が分配された〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2163284/">ズイ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4613gz/">ガイスト×レブナント～エゴサした結果、ここがゲームの世界で自分が主人公にあっさり倒されるクソザコモブだと知った俺は、偶然見つけた『攻略まとめサイト』を駆使して強くなって、主人公達を見返してやる！～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1466857/">サンボン</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1996gz/">孤島で錬金術師～修学旅行中に孤島に飛ばされたから、錬金術師になって生活環境を整えていく～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/905488/">雨水</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1125hb/">ゲートの出現で魔物があふれ人を襲い始めた【山奥で一人で戦いＤＩＹにハマる男が居た】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2070397/">ハンゼン</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_202/">四半期ローファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_301">純文学〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2941gv/">【１】宮廷書記官リットの優雅な生活</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1403149/">鷹野　進</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0629ha/">あと５分で世界が滅びると言われたので、私はカップラーメンを食べることにした</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/810824/">鞠目</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8248ha/">【３】宮廷書記官リットの憂鬱な事情</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1403149/">鷹野　進</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8625hb/">私が犯した罪について</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7890gx/">【２】宮廷書記官リットの有閑な日常</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1403149/">鷹野　進</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_301/">四半期純文学〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_302">ヒューマンドラマ〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4201gx/">目的は生き延びること</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2157661/">大菊小菊</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0469hc/">最凶侯爵の逆鱗に触れた者達の末路</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/800354/">やとぎ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1228hb/">後妻のお義母様とお義姉様が屋敷に来て、私は何故か幸せになりました。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2118551/">浅村鈴</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6397ha/">何故、彼は勇者を裏切ったのか</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/553431/">後藤</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9103ha/">熊侯爵の明るい家族計画</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2196980/">海老吉</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_302/">四半期ヒューマンドラマ〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_303">歴史〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9638gx/">三日月が新たくなるまで俺の土地！～マイナー武将「新田政盛」に転生したので野望MAXで生きていきます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/910414/">篠崎冬馬</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8961gy/">未来から吹いた風　～５人でひっくりかえす太平洋戦争～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/761654/">青雲あゆむ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7128ha/">【完結保証】マイナー戦国武将に転生したのでのんびり生きようと思ったら、いきなり30万石の大名になってしまいました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1082971/">田島はる</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3991gz/">董卓の娘</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/269153/">神奈いです</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7588ha/">時霞　～信長の軍師～　【連載中】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2055863/">水野忠</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_303/">四半期歴史〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_304">推理〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9636x/">薬屋のひとりごと</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/183213/">日向夏</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0084gz/">婚約破棄の日の夜に</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1942245/">夕景あき</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9273gz/">彼ぴっぴしゅきしゅきビーム殺人事件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/465813/">経済的ゾンビ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5067ha/">聖女様を殺したのは誰ですか？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/72988/">コーチャー</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5690hc/">佐伯さんの下着が透けてることを後ろの席の僕だけが知っている〜ところで佐伯さん、毎日帰り際にボソッと下着の色を教えてくるのはなんでなの？〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2154674/">麻田セカイ　</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_304/">四半期推理〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_305">ホラー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6050ha/">「真の聖女様、ですか？　ええ、もちろん歓迎いたしますよ」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1317855/">わんこそば</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4456hc/">娘が「悪役令嬢」に憑り殺された日。あるいは、あの子が死んだ日の話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2201884/">紫苑</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0710hc/">わたし、トイレの花子さん。今いかついオッサン除霊師から隠れているの。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1209761/">浅月 大</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8820hb/">乗っ取られたら乗っ取り返せばいいのですよ、王妃さま。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2110251/">牧村 多希</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7668gr/">今更「許せ」と言われても</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2041393/">アンドレイ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_305/">四半期ホラー〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_306">アクション〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0432fz/">異世界ＳＦ！　ＦＰＳ！　『カラフ撤退戦』</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/255884/">黒色粉末</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9736dt/">リビルドワールド</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/91636/">非公開</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1814gs/">人型巨大兵器〝に〟転生しました〜冷凍世界再点火〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2073978/">白色矮星（非テンプレ応援団）</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1730eu/">12ハロンのチクショー道【書籍化決定】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/285281/">野井ぷら</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5645gj/">失格王子の成り上がり冒険譚～出来損ないはいらないと王家を追い出された俺、規格外の『器』で世界最強の冒険者になる～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1303981/">未来人A</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_306/">四半期アクション〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_307">コメディー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8977hb/">勇者、辞退します。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1772895/">獅子柚子</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4414ha/">魔王軍を辞めたい暗黒騎士、やばい女騎士を拾う</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/245050/">溝上 良</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7668gf/">「第二王子が婚約破棄したってよ！」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/87375/">八月 あやの</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1753cz/">そのガーゴイルは地上でも危険です　～翼を失くした最強ガーゴイルの放浪記～　</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/622766/">大地の怒り</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2853gp/">魔王（童貞）ですが、様式美として勇者（かわいい）に「我の物になれ」と言ったら「わかった」と言われました……どうしたら良いですか？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1533134/">はぐれメタボ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_307/">四半期コメディー〔文芸〕ランキングを見る</a></div>
+</div>
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_401">VRゲーム〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2270gx/">元最強女番長が征く！VRMMO放浪記 -a Faraway Arcadia Online-</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2034255/">ツナ82</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6169dz/">シャングリラ・フロンティア〜クソゲーハンター、神ゲーに挑まんとす〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/474038/">硬梨菜</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7452hb/">いつの間にかチュートリアルおじさんとして人気者になっていた件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2164469/">ぼんちー</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2841hb/">TSしちゃったからスパチャ暮らし求めてVRゲームの実況者になります　～見た目メスガキ、頭脳は修羅～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/805392/">原初</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6507ha/">海は私の独壇場！私はゲーム内最強の魚人です◇◇ゲーム内で最もハードと言われる種族になったけど、私にとっては最高の種族でした◇◇</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2138720/">メイデン</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_401/">四半期VRゲーム〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_402">宇宙〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9568gr/">【連載版】キモオタモブ傭兵は、身の程を弁(わきま)える</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1561683/">土竜</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3900ha/">アルビオン王国宙軍士官物語～クリフエッジと呼ばれた男～（クリフエッジシリーズ合本版）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/284675/">愛山　雄町</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6685ep/">【告知漫画公開】乙女ゲームのハードモードで生きています【書籍化・2021年7月刊行】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/351196/">赤野用介</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7937gx/">なんかすごい性能の宇宙船を拾った</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/373143/">工具</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4196gy/">【短編】ファンタジー用チートで万全の準備をしたのに転移したのはＳＦの世界でした。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1231536/">東堂大稀（旧：To-do）</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_402/">四半期宇宙〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_403">空想科学〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6608gz/">近未来の地球に飛ばされた俺は、チートな戦車でドッカンドッカン大砲ぶっ放して、ハーレム作って片手間で荒廃した地球を救ってやんよ、とは真逆のおっさんが生き残るため四苦八苦する話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1908556/">ゴエモン</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4261ha/"> “冒険者アプリ”で片田舎の高校生が現代冒険者生活を送る少し未来のお話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/164671/">ダイスケ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2655gv/">貞操観念が逆転した宇宙人の軍隊でエースパイロットの俺だけが唯一男な話【書籍化決定！】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1357432/">寒天ゼリヰ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6890gp/">潜水空母：伊４００、令和の時代に飛ばされて魔改造を受けて再び元の時代に戻り無双する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1525935/">ホーリーナイト</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0680dh/">██▚　現代魔術は異世界をクロールするか ： 数理科学による魔術の始め方　▚██</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/638427/">▚ Richard Roe ▚</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_403/">四半期空想科学〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_404">パニック〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0308ha/">無職マンのゾンビサバイバル生活。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1507681/">秋津</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5197hb/">予知と解析</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/61336/">こる．</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9870gd/">【コミカライズ】異世界還りのおっさんは終末世界で無双する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1885720/">羽々音色</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4005gv/">沈没から始まるオッサンとJKのサバイバル漂流記　～絶対絶命のピンチのはずなのに当事者たちは案外エンジョイしている件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/869158/">かるちぇ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4966gy/">ゾンビの溢れかえった世界で吸血鬼の俺は救世主となる</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2164373/">水島紗鳥</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_404/">四半期パニック〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_9901">童話〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1119hc/">元勇者のおじいさんと元聖女のおばあさんが秒で全てを解決する昔話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9759gx/">各方面に配慮した桃次郎と桃子（順不同）≪ルビ付≫【There’s English】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4800gy/">もう遅いと言われた男の話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/956688/">曲尾　仁庵</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5775ha/">魔王は玉座で「もう遅いのだ」とつぶやいた</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/956688/">曲尾　仁庵</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9229gu/">転生したら桃太郎の家の子な筈が鬼を屠るスキルが無く追放されたけど、きびだんごと前世知識でかわいい妹達、もふもふとのんびり幸せに暮らします。鬼が倒せないから戻って来いと言われたけど、もう遅い！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2027544/">甘々恋愛糖分が足りない糖尿病患者の東夷</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_9901/">四半期童話〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_9902">詩〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3246hc/">恋は花火のように</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1653522/">しましまにゃんこ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5298hc/">夏恋</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1924237/">椎名ユズキ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6998ha/">えへへへ(*^_^*)</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1924237/">椎名ユズキ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2144gz/">この恋は終わりでしょうか？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/695906/">九傷</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9659hc/">時と砂が、夢見る先に</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1778570/">みこと。</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_9902/">四半期詩〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_9903">エッセイ〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8455ha/">札幌の市街地に出たヒグマについて、感覚が麻痺した北海道民の反応。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2055296/">遊び怠惰</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5865gz/">警察に捕まりました　～そして、現代社会の闇を見た～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2082320/">仙道アリマサ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8955hc/">熊エッセイ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1236912/">熊ノ翁</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0589ha/">新型コロナワクチンの副反応経過個人記録</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1299506/">門外漢</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2408gz/">三浦建太郎(ベルセルク著者)が亡くなっていた。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/978257/">ベルセルクの熱烈な壱ファン</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_9903/">四半期エッセイ〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="quarter_9999">その他〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6083ha/">出ていくのも『優しさ』ですから</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1645257/">さおん</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9474gz/">妹が拾ってきた猫が女子高生にしか見えない</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1184911/">燦々SUN</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4512hb/">転生して病んで復活したTS娘がvtuberやる話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1682724/">lost</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3065fd/">勇者「魔王倒したし帰るか」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/290353/">湯葉</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1438gx/">聖女と呼ばれた悪役令嬢</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1139442/">りったん</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/quarter_9999/">四半期その他〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="ranking_ll"><a href="#">▲ページ上部へ戻る</a></div>
+</div><!-- ranking_top5box dummy -->
+
+
+
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="genre_yearly">ジャンル別年間ランキングBEST5</div>
+</div><!-- title_h2 opentab -->
+
+<div class="ranking_top5box dummy">
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_101">異世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8120gp/">ブラック魔道具師ギルドを追放された私、王宮魔術師として拾われる　～ホワイトな宮廷で、幸せな新生活を始めます！～【Web版】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1681284/">葉月秋水</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0174gy/">ブサイクで有名な令嬢と婚約した。彼女はとても可愛らしい性格の人だった。　～『ゴブリン令嬢』と蔑まれる令嬢に恋した美貌の令息が彼女を幸せにしようと奮闘する物語～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1281198/">新天新地</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4616go/">真実の愛を見つけたと言われて婚約破棄されたので、復縁を迫られても今さらもう遅いです！【書籍化・コミカライズ決定】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/456859/">彩戸ゆめ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1784ga/">【4章終盤スタート】ループ7回目の悪役令嬢は、元敵国で自由気ままな花嫁生活を満喫する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1833130/">雨川 透子</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0423gu/">美人の姉が嫌がったのでどう見ても釣書が白豚の次期伯爵に嫁ぎましたところ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1397124/">真波潜</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_101/">年間異世界〔恋愛〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_102">現実世界〔恋愛〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1456gm/">日本語が話せないロシア人美少女転入生が頼れるのは、多言語マスターの俺1人</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1653734/">アサヒ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8023gv/"> 陰キャな俺、イケ好かないクラスの陽キャ糞野郎と（実際に）中身が5カ月間入れ替わっていました。でも、あいつの彼女に入れ替わりがバレることなく元に戻れて良かったです。もちろん変なことは一切していません。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2110479/">ジェットン</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1144go/">転生先が現代日本人ってふざけんなっ！ って思ったけどそれが普通だし案外充実してる</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1785398/">せん</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5038gy/">【連載版】「あんたが神作家なわけないでしょ」と幼馴染みからバカにされたうえに振られた～陰キャな僕が書いたWEB小説が書籍化・アニメ化・映画化までされた後に、作者が実は僕だったと気付いたところでもう遅い</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7070gz/">実家に帰ったら甘やかされ生活が始まりました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/624720/">月夜乃 古狸</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_102/">年間現実世界〔恋愛〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_201">ハイファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8443gv/">五年間働いていた治療師ギルドを不当解雇された“最弱”な俺。生きるために超有能スキルで‟最強”を目指します</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2136956/">岡本剛也</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3352gq/">一瞬で治療していたのに、何もしてないとパーティを追放された天才治癒師～今さら戻ってこいと言われても、闇ヒーラーとして楽しくやっているので治療は高額になるけどおたくら払えますか？～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1957308/">ひかさく＠菱川さかく</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4712gk/">【書籍化】王都の外れの錬金術師 ～ハズレ職業だったので、のんびりお店経営します～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1900692/">yocco</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9736gn/">味方が弱すぎて補助魔法に徹していた宮廷魔法師、追放されて最強を目指す</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/768996/">アルト／遥月@宮廷魔法師８月発売！</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3017gm/">Ｓランク冒険者パーティーのサポート役をクビになった俺は、念願の錬金術師となりスローライフを送りたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1469678/">銀麦</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_201/">年間ハイファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_202">ローファンタジー〔ファンタジー〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3976gk/">世界最速のレベルアップ　～無能スキル【ダンジョン内転移】が覚醒した結果、俺だけダンジョンのルールに縛られず最強になった～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/484778/">八又ナガト</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8459gk/">特級探索師への覚醒　～蜥蜴の尻尾切りに遭った青年は、地獄の王と成り無双する～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1302675/">笠鳴小雨</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1720gr/">ログアウトしたのはＶＲＭＭＯじゃなく本物の異世界でした ～現実に戻ってもステータスが壊れている件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/558192/">とーわ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7575gq/">【四章開始！】ハズレスキル「逃げる」で俺は極限低レベルのまま最強を目指す　～経験値抑制＆レベル１でスキルポイントが死ぬほどインフレ、スキルが取り放題になった件～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/441610/">天宮暁</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4595gp/">転生したので、たった一人で地球と貿易してみる　～ゲーム好き魔術少女の冒険譚～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/479260/">あかい</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_202/">年間ローファンタジー〔ファンタジー〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_301">純文学〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8634gj/">トロッコ問題とその最適解</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/457834/">間野　ハルヒコ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6905fx/">『妖精騎士の物語 』　少女は世界を変える</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1689750/">ペルスネージュ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2941gv/">【１】宮廷書記官リットの優雅な生活</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1403149/">鷹野　進</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7136gu/">婚約破棄交渉九十九回目、のちに……。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2113129/">あいより碧</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9380fv/">婚約破棄による経済効果</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1711157/">yuyu</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_301/">年間純文学〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_302">ヒューマンドラマ〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4201gx/">目的は生き延びること</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2157661/">大菊小菊</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6813gp/">え、社内システム全てワンオペしている私を解雇ですか？【書籍化・コミカライズ】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/569498/">下城米雪</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9085gr/">おっさん、転生して天才役者になる</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1987817/">ほえ太郎</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4042gt/">がんばって最高の遺書を書いたら、なぜか &quot;ざまあ&quot; することになりました</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1295627/">優木凛々</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0469hc/">最凶侯爵の逆鱗に触れた者達の末路</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/800354/">やとぎ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_302/">年間ヒューマンドラマ〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_303">歴史〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9638gx/">三日月が新たくなるまで俺の土地！～マイナー武将「新田政盛」に転生したので野望MAXで生きていきます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/910414/">篠崎冬馬</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1453gs/">鷹は瑞穂の空を飛ぶ～プラスチックの専門家が華族の娘に転生したので日本は化学立国になります～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1980903/">コモンレール</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8406bm/">戦国小町苦労譚</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/125212/">夾竹桃</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2491gk/">魯鈍の人（ロドンノヒト）  ～信長の弟、信秀の十男と言われて～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1549144/">牛一（ドン）</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4826gs/">（仮）戦国生存記</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1500680/">現実逃避</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_303/">年間歴史〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_304">推理〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9636x/">薬屋のひとりごと</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/183213/">日向夏</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7186gu/">追放後の手紙</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2059219/">華園とうふ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0084gz/">婚約破棄の日の夜に</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1942245/">夕景あき</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0575gn/">勇者一行は死ななければならない</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/72988/">コーチャー</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9273gz/">彼ぴっぴしゅきしゅきビーム殺人事件</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/465813/">経済的ゾンビ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_304/">年間推理〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_305">ホラー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7203go/">神田、おれだよ</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/328338/">ナチ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7668gr/">今更「許せ」と言われても</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2041393/">アンドレイ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6050ha/">「真の聖女様、ですか？　ええ、もちろん歓迎いたしますよ」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1317855/">わんこそば</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2367fs/">ゆるコワ！　～無敵の女子高生二人がただひたすら心霊スポットに凸しまくる！～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1305046/">谷尾銀</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3096gq/">底辺貴族で【スライム召喚】しか出来なくて美少女にイジメられてた俺、キレて顔面に召喚魔法を使ったら脳みそを乗っ取ることに成功　～バレたらやばいので奴隷にした美少女にヨイショさせながら権力を手に入れます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1339258/">馬路まんじ@本日、マンガ版「底辺領主の勘違い英雄譚」の新刊発売！</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_305/">年間ホラー〔文芸〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_306">アクション〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9736dt/">リビルドワールド</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/91636/">非公開</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1814gs/">人型巨大兵器〝に〟転生しました〜冷凍世界再点火〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2073978/">白色矮星（非テンプレ応援団）</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6543gg/">【収納空間】を極める男　～モンスターを狩りたいので誰よりも【収納空間】を使い込んでいたら、色々な事件に巻き込まれてしまう。『俺はモンスターを狩りたいだけなのにぃ！』～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/954221/">森たん</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5645gj/">失格王子の成り上がり冒険譚～出来損ないはいらないと王家を追い出された俺、規格外の『器』で世界最強の冒険者になる～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1303981/">未来人A</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0432fz/">異世界ＳＦ！　ＦＰＳ！　『カラフ撤退戦』</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/255884/">黒色粉末</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_306/">年間アクション〔文芸〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_307">コメディー〔文芸〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7668gf/">「第二王子が婚約破棄したってよ！」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/87375/">八月 あやの</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8618gu/">大根ですが、おでんパーティから追放されました。パーティの野菜成分を俺が一手に担っていたんだが、大丈夫かな</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1176553/">ななみや</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0978gg/">「いいか、ハーレムっていうのはな！」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/87375/">八月 あやの</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7509go/">「さあ、回復してやろう」と全回復してきた魔王様、ついに聖女に転生する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/638162/">延野正行</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1253go/">冒険者「伝説の聖剣を手に入れた……よし売ろう！」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1141852/">麦酒</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_307/">年間コメディー〔文芸〕ランキングを見る</a></div>
+</div>
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_401">VRゲーム〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6169dz/">シャングリラ・フロンティア〜クソゲーハンター、神ゲーに挑まんとす〜</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/474038/">硬梨菜</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8206dh/">出遅れテイマーのその日ぐらし</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/674440/">棚架ユウ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9023gk/">テイマー姉妹のもふもふ配信　～もふもふをもふもふする最愛の妹がとってもかわいいので配信で自慢してみます～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/573800/">龍翠</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2270gx/">元最強女番長が征く！VRMMO放浪記 -a Faraway Arcadia Online-</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2034255/">ツナ82</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4218cw/">新しいゲーム始めました。～使命もないのに最強です？～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/629597/">じゃがバター</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_401/">年間VRゲーム〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_402">宇宙〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6685ep/">【告知漫画公開】乙女ゲームのハードモードで生きています【書籍化・2021年7月刊行】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/351196/">赤野用介</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9568gr/">【連載版】キモオタモブ傭兵は、身の程を弁(わきま)える</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1561683/">土竜</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4516gq/">完結&amp;番外編更新中　宇宙戦争掲示板ー1人なんかおかしいのがいるけどー</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1964233/">福郎</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9572gj/">死んでやる～彼女を寝取られ、死ぬに死にきれないヘタレが巻き起こす宇宙活劇～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1015958/">のらしろ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0990go/">【大】魔導師様、目覚める！</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2035533/">そういち</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_402/">年間宇宙〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_403">空想科学〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8731gs/">「気が触れている」と王家から追い出された俺は、自説通りに超古代銀河帝国の植民船を発見し大陸最大国家を建国する。　～今さら帰って来てくれと言っても、もう遅い！　超テクノロジーを駆使した俺の建国史～</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1199109/">英　慈尊</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n2655gv/">貞操観念が逆転した宇宙人の軍隊でエースパイロットの俺だけが唯一男な話【書籍化決定！】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1357432/">寒天ゼリヰ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5400go/">Doggy House Hound(s)</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/233755/">ポチ吉</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5839el/">Doggy House Hound</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/233755/">ポチ吉</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1539gd/">ポンコツ宇宙船拾得顛末記（仮）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/321510/">野乃たんぽぽ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_403/">年間空想科学〔SF〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_404">パニック〔SF〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9870gd/">【コミカライズ】異世界還りのおっさんは終末世界で無双する</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1885720/">羽々音色</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n0308ha/">無職マンのゾンビサバイバル生活。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1507681/">秋津</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5197hb/">予知と解析</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/61336/">こる．</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9300fz/">僕以外の人類はＶＲ空間に移住した</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/600568/">佩ロッシュ</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3554fy/">ゾンビがうろつく世界になったら異世界から帰ってきた俺はどうする？　ゾンビを相手に無双するよりも生き長らえるためにどこかで拠点を作りたい</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1283301/">蛸山烏賊ノ介</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_404/">年間パニック〔SF〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_9901">童話〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7985gr/">一人だけ難易度が明らかにおかしいかぐや姫</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1119hc/">元勇者のおじいさんと元聖女のおばあさんが秒で全てを解決する昔話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7213gf/">泉の女神に恋をした俺は金の斧も銀の斧もいらない。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1463156/">しいたけ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n9759gx/">各方面に配慮した桃次郎と桃子（順不同）≪ルビ付≫【There’s English】</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/2124137/">たなか</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4800gy/">もう遅いと言われた男の話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/956688/">曲尾　仁庵</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_9901/">年間童話〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_9902">詩〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4381gn/">書籍化さえしなければ、君は今でも書き続けていただろうか？</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1892300/">しゃもじ</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1943gx/">ブクマはがされ川柳</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1559858/">殿水結子</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6426ev/">俺の作品に１：１とか２：２とかふざけた点数をつけたクソどもへ。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/615253/">ZUZU</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n8433go/">なろうあるある川柳</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1559858/">殿水結子</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n4977gq/">ママさんなろう作家あるある川柳</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1559858/">殿水結子</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_9902/">年間詩〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="genreranking_outline clearfix">
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_9903">エッセイ〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7542gs/">最近のランキング、なんだかなぁどころじゃねえ。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1281503/">時の権能者</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n5553dx/">読み専が紹介する『なろうお気に入り作品』</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/865270/">ひょろ</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1500gp/">短編詐欺が損をする</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/108942/">はとさぶれ</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3035go/">なろうの小説、読みたくない作品増えたよね。</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/347315/">柊馨</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n7289gk/">『なろう用語の基礎知識』第四稿</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1339485/">ξ˚⊿˚)ξ ＜ただのぎょー（Gyo￥0-）</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_9903/">年間エッセイ〔その他〕ランキングを見る</a></div>
+</div>
+<div class="genreranking_topbox">
+
+<h3 class="ranking_genre" id="yearly_9999">その他〔その他〕</h3>
+
+<ul>
+<li>
+<span class="ranking_number">1位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n6083ha/">出ていくのも『優しさ』ですから</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1645257/">さおん</a></span>
+</li>
+<li>
+<span class="ranking_number">2位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3262em/">新米オッサン冒険者、最強パーティに死ぬほど鍛えられて無敵になる（情報局）</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/66129/">岸馬きらく</a></span>
+</li>
+<li>
+<span class="ranking_number">3位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3065fd/">勇者「魔王倒したし帰るか」</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/290353/">湯葉</a></span>
+</li>
+<li>
+<span class="ranking_number">4位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n1438gx/">聖女と呼ばれた悪役令嬢</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/1139442/">りったん</a></span>
+</li>
+<li>
+<span class="ranking_number">5位</span><a class="tl" target="_blank" href="https://ncode.syosetu.com/n3977gr/">字書きが筆を折りそうになった話</a><br />
+<span class="name">作者：<a href="https://mypage.syosetu.com/851881/">まきぶろ</a></span>
+</li>
+</ul>
+
+<div class="genreranking_ll">→<a href="/rank/genrelist/type/yearly_9999/">年間その他〔その他〕ランキングを見る</a></div>
+</div>
+
+</div>
+
+<div class="ranking_ll"><a href="#">▲ページ上部へ戻る</a></div>
+</div><!-- ranking_top5box dummy -->
+
+</div><!-- rankmain_box -->
+
+
+<div class="rank_attention2">
+<div class="attention_title">日間ランキング</div>
+　ランキングの更新日時から過去24時間のランキング集計ポイントを元に決定(毎日３回程度更新)<br />
+
+<div class="attention_title">週間ランキング</div>
+　ランキングの更新日時から過去7日間のランキング集計ポイントを元に決定(毎日朝更新)<br />
+
+
+<div class="attention_title">月間ランキング</div>
+　ランキングの更新日時から過去30日間のランキング集計ポイントを元に決定(毎日朝更新)<br />
+
+
+<div class="attention_title">四半期ランキング</div>
+　ランキングの更新日時から過去90日間のランキング集計ポイントを元に決定(毎日朝更新)<br />
+
+<div class="attention_title">年間ランキング</div>
+　ランキングの更新日時から過去365日間のランキング集計ポイントを元に決定(毎週火曜日朝更新)<br />
+
+<div class="attention_title">累計ランキング</div>
+　掲載開始時点からのランキング集計ポイントを元に決定(毎時更新)<br />
+
+<div class="attention_title" id="rankpoint">ランキング集計ポイントとは？</div>
+評価ポイント、ブックマーク数を既定の計算式に入力した上で導き出される数値です。<br /><br />
+
+■ランキング集計ポイント計算式<br />
+(評価ポイント[★×2pt])＋(ブックマーク件数×2pt)<br />
+※評価ポイントのうち、期間別ランキングの集計対象となるポイントは、評価入力後の初回ランキング更新時に入力されていたもののみです。<br />
+それ以降に入力された評価ポイントについては、期間別ランキングの集計対象外となります。
+
+
+<div class="attention_title">同一ptの場合の特例</div>
+　同じptの作品が2作品以上の場合、システムの仕様上、ランダムで順位がつけられます。予めご了承ください。<br />
+
+<div class="attention_title">表記のズレに関して</div>
+　4時～7時、11時～12時、18～19時はシステム更新時刻です。<br />
+  　この間、TOPページと各ランキングページに新旧両方のランキングが混ざる可能性があります。<br />
+</div><!--rank_attention2-->
+</div><!--main-->
+
+<div id="sub">
+<div class="sub_box">
+<div class="title_h2">
+<div class="h2_help">サイト案内</div>
+</div>
+<ul class="list_g">
+<li><a href="https://yomou.syosetu.com/site/about/">「小説を読もう！」について</a></li>
+<li><a href="https://syosetu.com/site/about/">「小説家になろう」について</a></li>
+<li><a href="https://syosetu.com/site/group/">小説家になろうグループ</a></li>
+<li><a href="https://ssl.syosetu.com/useradd/mailinput/">ユーザ登録</a></li>
+</ul>
+</div>
+
+<div class="sub_box">
+<div class="title_h2">
+<div class="h2_search">特殊検索</div>
+</div>
+<ul class="list_g">
+<li><a href="https://yomou.syosetu.com/nolist/nopointlist/">未評価作品一覧</a></li>
+<li><a href="https://yomou.syosetu.com/nolist/noimpressionlist/">未感想作品一覧</a></li>
+<li><a href="https://yomou.syosetu.com/userlist/avgranklist/">平均点順作者一覧</a></li>
+<li><a href="https://yomou.syosetu.com/rireki/list/">閲覧履歴</a></li>
+</ul>
+</div>
+<div class="sub_box">
+<div class="title_h2">
+<div class="h2_help">ヘルプ</div>
+</div>
+<ul class="list_g">
+<li><a href="https://syosetu.com/help/list/categoriid/e6a49ce7b4a2/#help2">Ｎコードについて</a></li>
+<li><a href="https://syosetu.com/searchuser/search/">ユーザ検索</a></li>
+<li><a href="https://syosetu.com/help/list/categoriid/e6a49ce7b4a2">ヘルプ一覧</a></li>
+
+</ul>
+</div>
+<div class="c-ad c-ad--skyscraper">
+
+<div id="1ec7c478f19e7ed3a1216adc578b5280">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "1ec7c478f19e7ed3a1216adc578b5280",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div>
+</div>
+
+        </div><!-- #trad -->
+
+</div><!-- .l-container -->
+
+
+<div class="l-footer">
+<div class="p-footer">
+<a class="p-footer__logo" href="//yomou.syosetu.com/">
+<div class="p-footer__site-outline">小説家になろう投稿作品の読書サイト</div>
+<img src="//static.syosetu.com/view/images/common/logo_yomou_w.png" alt="小説を読もう！">
+</a>
+
+<div class="p-footer__nav c-navlist c-navlist--dark">
+<div class="c-navlist__category">
+<div class="c-navlist__headline">小説家になろうについて</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/about/">サイト案内</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/guideline/">ガイドライン</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/man/">各種マニュアル</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/rule/">利用規約</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/privacy/">プライバシーポリシー</a></li>
+<li class="c-navlist__list-item"><a href="https://hinaproject.co.jp/">運営会社</a></li>
+</ul>
+</div>
+
+<div class="c-navlist__category">
+<div class="c-navlist__headline">お困りの方は</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//syosetu.com/bbs/attention/">質問板</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/help/top/">ヘルプ</a></li>
+<li class="c-navlist__list-item"><a href="//ssl.syosetu.com/inquire/input/customcode/yomou/">お問い合わせ</a></li>
+</ul>
+</div>
+
+<div class="c-navlist__category">
+<div class="c-navlist__headline">小説家になろうグループ</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//syosetu.com/">小説家になろう</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/">小説を読もう！</a></li>
+<li class="c-navlist__list-item"><a href="//pdfnovels.net/">タテ書き小説ネット</a></li>
+<li class="c-navlist__list-item"><a href="//lovenove.syosetu.com/">ラブノベ</a></li>
+<li class="c-navlist__list-item"><a href="//mitemin.net/">みてみん</a></li>
+<li class="c-navlist__list-item"><a href="//dev.syosetu.com/">なろうデベロッパー</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/group/">なろうグループ一覧</a></li>
+<li class="c-navlist__list-item"><a href="//mid.syosetu.com/">ミッドナイトノベルズ</a></li>
+</ul>
+</div>
+
+<div class="c-navlist__category">
+<div class="c-navlist__headline">小説を探す</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/search.php">小説検索</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/search/keyword/">人気キーワード</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/pickup/list/">小説PickUp！</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/reviewlist/list/">イチオシレビュー</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/syuppan/list/">書報 (出版作品紹介)</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/rireki/list/">閲覧履歴</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/nolist/nopointlist/">未評価作品一覧</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/nolist/noimpressionlist/">未感想作品一覧</a></li>
+</ul>
+</div>
+</div>
+</div><!-- p-footer -->
+
+<div class="p-copyright">
+<a class="p-copyright__copyright" href="https://hinaproject.co.jp/">&copy; HinaProject Inc.</a>
+</div>
+</div><!-- footer -->
+
+
+<script type="text/javascript" src="//d-cache.microad.jp/js/td_sn_access.js"></script>
+<script type="text/javascript">
+  microadTd.SN.start({})
+</script>
+
+
+<script type="text/javascript"><!--
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3637811-4', 'auto');
+  ga('send', 'pageview');
+
+
+//--></script>
+</body>
 </html>

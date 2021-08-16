@@ -1,0 +1,697 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="40万以上のオンライン小説、携帯小説を掲載している投稿型の小説サイトです。小説検索、小説評価、ルビ・縦書き対応、高機能小説執筆機能など">
+<meta name="keywords" content="携帯小説,ケータイ小説,オンライン小説,縦書き小説,小説投稿,小説投稿サイト">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1088, maximum-scale=1.0, user-scalable=yes">
+
+<title>小説を読もう！ || 小説ランキング</title>
+
+<link rel="shortcut icon" href="https://static.syosetu.com/sub/yomouview/images/yomou.ico">
+<link rel="apple-touch-icon-precomposed" href="https://static.syosetu.com/sub/yomouview/images/apple-touch-icon-precomposed.png?ojjr8y">
+
+<link rel="alternate" type="application/atom+xml" href="https://api.syosetu.com/allnovel.Atom" title="Atom">
+<link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/base_yomou-pc.css?qugxcw">
+
+<link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/p_common-pc.css?qvr790"><link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/trad/base.css?qugxcx"><link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/trad/second.css?qugxcx"><link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/trad/rank.css?qugxcx">
+
+
+<script src="https://static.syosetu.com/view/js/lib/jquery/1.12.4/jquery.min.js?oks8j8"></script>
+
+<link rel="stylesheet" href="https://static.syosetu.com/view/css/lib/jqueryui/1.12.1/jquery-ui.min.css?oks8j8">
+<script src="https://static.syosetu.com/view/js/lib/jqueryui/1.12.1/jquery-ui.min.js?oks8j8"></script>
+
+<script src="https://static.syosetu.com/view/js/lib/jquery.hina.js?oyez8w"></script>
+<script src="https://static.syosetu.com/view/js/event/global_menu.js?psawph"></script>
+<script src="https://static.syosetu.com/sub/yomouview/js/global_menu.js?psawph"></script>
+<script src="https://static.syosetu.com/sub/yomouview/js/check_text.js?owywu2"></script>
+
+<script src="https://static.syosetu.com/view/js/smp_toggle.js?qsxen2"></script>
+
+
+<script type="text/javascript">
+var microadCompass = microadCompass || {};
+microadCompass.queue = microadCompass.queue || [];
+</script>
+<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async></script>
+
+</head>
+<body>
+
+
+<div class="l-header">
+<div class="p-header">
+<div class="p-header__inner">
+<h1 class="p-header__logo">
+<a href="//yomou.syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_yomou.png" alt="小説を読もう！"></a>
+</h1>
+<div class="p-header__description">
+小説を読もう！は｢小説家になろう｣に投稿された<br>
+Web小説<span class="p-header__count">899,350</span>作品を無料で読める・探せるサイトです。
+</div>
+<div class="p-header__subnav">
+<ul class="p-header__subnav-list">
+<li class="p-header__subnav-item">
+<a href="//syosetu.com/site/about/"><span class="p-icon p-icon--wakaba" aria-hidden="true"></span>初めての方へ</a>
+</li>
+<li class="p-header__subnav-item">
+<a href="//syosetu.com/site/man/"><span class="p-icon p-icon--question" aria-hidden="true"></span>マニュアル</a>
+</li>
+<li class="p-header__subnav-item">
+<a href="//ssl.syosetu.com/login/input/"><span class="p-icon p-icon--login" aria-hidden="true"></span>ログイン</a>
+</li>
+<li class="p-header__subnav-item p-header__subnav-item--site">
+<a href="//syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_narou.png" alt="小説家になろう"></a>
+</li>
+</ul>
+<form class="c-form p-header__search js-quick-search" action="//yomou.syosetu.com/search.php">
+<div class="c-form__quicksearch">
+<select class="c-form__select c-form__select--accent" name="search_type">
+<option value="novel">小説</option>
+<option value="user">ユーザ</option>
+</select>
+<input class="c-form__quicksearch-text" type="text" name="word" placeholder="小説を検索">
+<button class="c-form__quicksearch-button" type="submit" name="button"><span class="p-icon p-icon--search" aria-label="検索"></span></button>
+</div>
+</form>
+</div>
+</div><!-- /.p-header__inner -->
+</div><!-- /.p-header -->
+
+<div class="p-main-nav">
+<ul class="p-main-nav__list">
+<li class="p-main-nav__item">
+<a href="//syosetu.com/favnovelmain/list/">
+<span class="p-icon p-icon--bookmark" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">ブックマーク</span>
+</a>
+</li>
+<li class="p-main-nav__item">
+<a href="//yomou.syosetu.com/rireki/list/">
+<span class="p-icon p-icon--watch" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">閲覧履歴</span>
+</a>
+</li>
+<li class="p-main-nav__item">
+<a href="//yomou.syosetu.com/rank/genretop/">
+<span class="p-icon p-icon--crown" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">ランキング</span>
+</a>
+</li>
+<li class="p-main-nav__item">
+<a href="//yomou.syosetu.com/search.php">
+<span class="p-icon p-icon--search" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">小説検索</span>
+</a>
+</li>
+<li class="p-main-nav__item p-main-nav__item--useradd">
+<a href="//ssl.syosetu.com/useradd/mailinput/">
+<span class="p-icon p-icon--user" aria-hidden="true"></span>
+<span class="p-main-nav__item-name">ユーザ登録</span>
+</a>
+</li>
+</ul>
+</div>
+
+
+</div><!-- .l-header -->
+<div class="l-container">
+
+    <div id="trad" class="c-trad-contents">
+    
+<div id="main">
+<h2 class="ranking">ランキング</h2>
+<ul class="ranking_navi">
+<li class="change_rank"><a href="/rank/genretop/">ジャンル別</a></li>
+<li class="on"><a href="file:///Users/kawakamikenta/Desktop/techboost/portfolio/output_example/output_example_sougou.html">総合</a></li>
+<li class="isekai_rank"><a href="/rank/isekaitop/">異世界転生/転移</a></li>
+</ul>
+
+<ul class="r_navilist">
+<li><a href="#daily_total">日間</a></li>
+<li><a href="#weekly_total">週間</a></li>
+<li><a href="#monthly_total">月間</a></li>
+<li><a href="#quarter_total">四半期</a></li>
+<li><a href="#yearly_total">年間</a></li>
+<li><a href="#total_total">累計</a></li>
+</ul>
+
+<div class="rankmain_box">
+<div class="title_h2 opentab">
+<div class="h2_rank" id="daily_total">日間ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box dummy">
+<ul>
+<li>
+<img alt="1位" src="https://static.syosetu.com/sub/yomouview/images/rank1.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n1314hd/">魔術師クノンは見えている</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/215441/">南野海風</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="2位" src="https://static.syosetu.com/sub/yomouview/images/rank2.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n5190hd/">蘇り地味令嬢と髑髏（しゃれこうべ）令息〜復讐も地味に地道に〜</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/2190550/">ジュレヌク</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="3位" src="https://static.syosetu.com/sub/yomouview/images/rank3.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n5247hd/">愛する人ができたので婚約破棄したいと王太子殿下に相談されたので、有責でない私から婚約破棄に対するメリットとデメリットを提示してみた件について</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1275419/">ゆうな</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="4位" src="https://static.syosetu.com/sub/yomouview/images/rank4.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n4688hd/">一般庶民ですが、浮気されて離婚した傷心中の貴族に見初められました</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="5位" src="https://static.syosetu.com/sub/yomouview/images/rank5.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n3852hd/">戦地から帰ってきたタカシ君。普通に高校生活を送りたい</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1972228/">安い芸</a>
+／
+ジャンル：<a href="/search.php?genre=102">現実世界〔恋愛〕</a>
+</span>
+</li>
+</ul>
+<div class="ranking_ll"><a href="/rank/list/type/daily_total/">→日間ランキングをもっと詳しく見る</a></div>
+</div><!--ranking_top5box-->
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="weekly_total">週間ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box dummy">
+<ul>
+<li>
+<img alt="1位" src="https://static.syosetu.com/sub/yomouview/images/rank1.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n3106hd/">【連載版】左遷された無能王子は実力を隠したい～二度転生した最強賢者、今世では楽したいので手を抜いてたら、王家を追放された。今更帰ってこいと言われても遅い、領民に実力がバレて、実家に帰してくれないから…</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="2位" src="https://static.syosetu.com/sub/yomouview/images/rank2.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n2688hd/">婚約破棄を告げられましたが、理由がわからなかったので思うところを述べていったら、謝罪された件について</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1662677/">里見知美</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="3位" src="https://static.syosetu.com/sub/yomouview/images/rank3.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n3930hd/">もう、諦めたりしない。</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1850688/">あんこ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="4位" src="https://static.syosetu.com/sub/yomouview/images/rank4.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n4688hd/">一般庶民ですが、浮気されて離婚した傷心中の貴族に見初められました</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="5位" src="https://static.syosetu.com/sub/yomouview/images/rank5.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n0521hc/">ニセモノ聖女が本物に担ぎ上げられるまでのその過程</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1247986/">エイ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+</ul>
+<div class="ranking_ll"><a href="/rank/list/type/weekly_total/">→週間ランキングをもっと詳しく見る</a></div>
+</div><!--ranking_top5box-->
+
+
+<div class="c-ad c-ad--bigbanner" style="margin-bottom:40px;">
+
+<div id="fec86779c5cb1f8c1e9f01443bec3b9d">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "fec86779c5cb1f8c1e9f01443bec3b9d",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div>
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="monthly_total">月間ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box dummy">
+<ul>
+<li>
+<img alt="1位" src="https://static.syosetu.com/sub/yomouview/images/rank1.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n3032hc/">無自覚な天才少女は気付かない</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/851881/">まきぶろ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="2位" src="https://static.syosetu.com/sub/yomouview/images/rank2.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n5792hc/">【連載版】落ちこぼれギルド職員、早く帰るためSランク召喚士としてボスを倒してた〜「定時で帰るから」と追放した癖に、今更戻ってこいと言われても遅い。僕は病弱な妹のためホワイトな冒険者ギルドに再就職した</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/252897/">茨木野</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="3位" src="https://static.syosetu.com/sub/yomouview/images/rank3.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n1929hb/">三食昼寝付き生活を約束してください、公爵様</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1574082/">チカフジ　ユキ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="4位" src="https://static.syosetu.com/sub/yomouview/images/rank4.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n3511hb/">煤まみれの騎士　～かつては神童と呼ばれながらも授かった魔力がゼロだった男、蔑まれ迫害され元婚約者に仕えることになったけど諦めずに戦い続けます～</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/2200724/">美浜ヨシヒコ</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="5位" src="https://static.syosetu.com/sub/yomouview/images/rank5.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n7310hb/">【完結】めでたく婚約破棄が成立したので、自由気ままに生きようと思います</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/2189487/">当麻リコ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+</ul>
+<div class="ranking_ll"><a href="/rank/list/type/monthly_total/">→月間ランキングをもっと詳しく見る</a></div>
+</div><!--ranking_top5box-->
+
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="quarter_total">四半期ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box dummy">
+<ul>
+<li>
+<img alt="1位" src="https://static.syosetu.com/sub/yomouview/images/rank1.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n8465gx/">大ハズレだと追放された転生重騎士はゲーム知識で無双する</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/625518/">猫子</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="2位" src="https://static.syosetu.com/sub/yomouview/images/rank2.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n9624gu/">弱小領地の生存戦略！　～俺の領地が何度繰り返しても滅亡するんだけど。これ、どうしたら助かりますか？～</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1912800/">征夷冬将軍ヤマシタ</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="3位" src="https://static.syosetu.com/sub/yomouview/images/rank3.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n9925gz/">戦闘力のないハズレ才能【翻訳】で古代魔導書を読み漁っていたら世界最強になってました</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1493546/">蒼乃白兎</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="4位" src="https://static.syosetu.com/sub/yomouview/images/rank4.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n0174gy/">ブサイクで有名な令嬢と婚約した。彼女はとても可愛らしい性格の人だった。　～『ゴブリン令嬢』と蔑まれる令嬢に恋した美貌の令息が彼女を幸せにしようと奮闘する物語～</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1281198/">新天新地</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="5位" src="https://static.syosetu.com/sub/yomouview/images/rank5.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n1929hb/">三食昼寝付き生活を約束してください、公爵様</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1574082/">チカフジ　ユキ</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+</ul>
+<div class="ranking_ll"><a href="/rank/list/type/quarter_total/">→四半期ランキングをもっと詳しく見る</a></div>
+</div><!--ranking_top5box-->
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="yearly_total">年間ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box">
+<ul>
+<li>
+<img alt="1位" src="https://static.syosetu.com/sub/yomouview/images/rank1.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n3976gk/">世界最速のレベルアップ　～無能スキル【ダンジョン内転移】が覚醒した結果、俺だけダンジョンのルールに縛られず最強になった～</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/484778/">八又ナガト</a>
+／
+ジャンル：<a href="/search.php?genre=202">ローファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="2位" src="https://static.syosetu.com/sub/yomouview/images/rank2.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n8120gp/">ブラック魔道具師ギルドを追放された私、王宮魔術師として拾われる　～ホワイトな宮廷で、幸せな新生活を始めます！～【Web版】</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1681284/">葉月秋水</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+<li>
+<img alt="3位" src="https://static.syosetu.com/sub/yomouview/images/rank3.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n8465gx/">大ハズレだと追放された転生重騎士はゲーム知識で無双する</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/625518/">猫子</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="4位" src="https://static.syosetu.com/sub/yomouview/images/rank4.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n6755gk/">【Web版】町人Aは悪役令嬢をどうしても救いたい【本編完結済み】</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1728051/">一色孝太郎</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="5位" src="https://static.syosetu.com/sub/yomouview/images/rank5.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n0174gy/">ブサイクで有名な令嬢と婚約した。彼女はとても可愛らしい性格の人だった。　～『ゴブリン令嬢』と蔑まれる令嬢に恋した美貌の令息が彼女を幸せにしようと奮闘する物語～</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/1281198/">新天新地</a>
+／
+ジャンル：<a href="/search.php?genre=101">異世界〔恋愛〕</a>
+</span>
+</li>
+</ul>
+<div class="ranking_ll"><a href="/rank/list/type/yearly_total/">→年間ランキングをもっと詳しく見る</a></div>
+</div><!--ranking_top5box-->
+
+
+
+<div class="title_h2 opentab">
+<div class="h2_rank" id="total_total">累計ランキングBEST5</div>
+</div><!-- title_h2 -->
+
+<div class="ranking_top5box dummy">
+<ul>
+<li>
+<img alt="1位" src="https://static.syosetu.com/sub/yomouview/images/rank1.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n6316bn/">転生したらスライムだった件</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/311735/">伏瀬</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="2位" src="https://static.syosetu.com/sub/yomouview/images/rank2.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n9669bk/">無職転生　- 異世界行ったら本気だす -</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/288399/">理不尽な孫の手</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="3位" src="https://static.syosetu.com/sub/yomouview/images/rank3.gif?mmxhds" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n2710db/">とんでもスキルで異世界放浪メシ</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/679640/">江口　連</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="4位" src="https://static.syosetu.com/sub/yomouview/images/rank4.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n8611bv/">ありふれた職業で世界最強</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/386841/">厨二好き/白米良</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+<li>
+<img alt="5位" src="https://static.syosetu.com/sub/yomouview/images/rank5.gif?mmxhdt" />&nbsp;
+<a class="tl" target="_blank" href="https://ncode.syosetu.com/n7975cr/">蜘蛛ですが、なにか？</a><br />
+<span class="name_genre">
+作者：<a href="https://mypage.syosetu.com/595431/">馬場翁</a>
+／
+ジャンル：<a href="/search.php?genre=201">ハイファンタジー〔ファンタジー〕</a>
+</span>
+</li>
+</ul>
+<div class="ranking_ll"><a href="/rank/list/type/total_total/">→累計ランキングをもっと詳しく見る</a></div>
+</div><!--ranking_top5box-->
+
+<div class="c-ad c-ad--bigbanner" style="margin-bottom:40px;">
+
+<div id="d04a81b86b6e4a1cdc6f9ba9285ee24e">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "d04a81b86b6e4a1cdc6f9ba9285ee24e",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div>
+
+</div><!--rankmain_box-->
+
+
+<div class="rank_attention2">
+<div class="attention_title">日間ランキング</div>
+　ランキングの更新日時から過去24時間のランキング集計ポイントを元に決定(毎日３回程度更新)<br />
+
+<div class="attention_title">週間ランキング</div>
+　ランキングの更新日時から過去7日間のランキング集計ポイントを元に決定(毎日朝更新)<br />
+
+
+<div class="attention_title">月間ランキング</div>
+　ランキングの更新日時から過去30日間のランキング集計ポイントを元に決定(毎日朝更新)<br />
+
+
+<div class="attention_title">四半期ランキング</div>
+　ランキングの更新日時から過去90日間のランキング集計ポイントを元に決定(毎日朝更新)<br />
+
+<div class="attention_title">年間ランキング</div>
+　ランキングの更新日時から過去365日間のランキング集計ポイントを元に決定(毎週火曜日朝更新)<br />
+
+<div class="attention_title">累計ランキング</div>
+　掲載開始時点からのランキング集計ポイントを元に決定(毎時更新)<br />
+
+<div class="attention_title" id="rankpoint">ランキング集計ポイントとは？</div>
+評価ポイント、ブックマーク数を既定の計算式に入力した上で導き出される数値です。<br /><br />
+
+■ランキング集計ポイント計算式<br />
+(評価ポイント[★×2pt])＋(ブックマーク件数×2pt)<br />
+※評価ポイントのうち、期間別ランキングの集計対象となるポイントは、評価入力後の初回ランキング更新時に入力されていたもののみです。<br />
+それ以降に入力された評価ポイントについては、期間別ランキングの集計対象外となります。
+
+
+<div class="attention_title">同一ptの場合の特例</div>
+　同じptの作品が2作品以上の場合、システムの仕様上、ランダムで順位がつけられます。予めご了承ください。<br />
+
+<div class="attention_title">表記のズレに関して</div>
+　4時～7時、11時～12時、18～19時はシステム更新時刻です。<br />
+  　この間、TOPページと各ランキングページに新旧両方のランキングが混ざる可能性があります。<br />
+</div><!--rank_attention2-->
+</div><!--main-->
+
+<div id="sub">
+<div class="sub_box">
+<div class="title_h2">
+<div class="h2_help">サイト案内</div>
+</div>
+<ul class="list_g">
+<li><a href="https://yomou.syosetu.com/site/about/">「小説を読もう！」について</a></li>
+<li><a href="https://syosetu.com/site/about/">「小説家になろう」について</a></li>
+<li><a href="https://syosetu.com/site/group/">小説家になろうグループ</a></li>
+<li><a href="https://ssl.syosetu.com/useradd/mailinput/">ユーザ登録</a></li>
+</ul>
+</div>
+
+<div class="sub_box">
+<div class="title_h2">
+<div class="h2_search">特殊検索</div>
+</div>
+<ul class="list_g">
+<li><a href="https://yomou.syosetu.com/nolist/nopointlist/">未評価作品一覧</a></li>
+<li><a href="https://yomou.syosetu.com/nolist/noimpressionlist/">未感想作品一覧</a></li>
+<li><a href="https://yomou.syosetu.com/userlist/avgranklist/">平均点順作者一覧</a></li>
+<li><a href="https://yomou.syosetu.com/rireki/list/">閲覧履歴</a></li>
+</ul>
+</div>
+<div class="sub_box">
+<div class="title_h2">
+<div class="h2_help">ヘルプ</div>
+</div>
+<ul class="list_g">
+<li><a href="https://syosetu.com/help/list/categoriid/e6a49ce7b4a2/#help2">Ｎコードについて</a></li>
+<li><a href="https://syosetu.com/searchuser/search/">ユーザ検索</a></li>
+<li><a href="https://syosetu.com/help/list/categoriid/e6a49ce7b4a2">ヘルプ一覧</a></li>
+
+</ul>
+</div>
+<div class="c-ad c-ad--skyscraper">
+
+<div id="1ec7c478f19e7ed3a1216adc578b5280">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "1ec7c478f19e7ed3a1216adc578b5280",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div>
+</div>
+
+        </div><!-- #trad -->
+
+</div><!-- .l-container -->
+
+
+<div class="l-footer">
+<div class="p-footer">
+<a class="p-footer__logo" href="//yomou.syosetu.com/">
+<div class="p-footer__site-outline">小説家になろう投稿作品の読書サイト</div>
+<img src="//static.syosetu.com/view/images/common/logo_yomou_w.png" alt="小説を読もう！">
+</a>
+
+<div class="p-footer__nav c-navlist c-navlist--dark">
+<div class="c-navlist__category">
+<div class="c-navlist__headline">小説家になろうについて</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/about/">サイト案内</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/guideline/">ガイドライン</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/man/">各種マニュアル</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/rule/">利用規約</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/privacy/">プライバシーポリシー</a></li>
+<li class="c-navlist__list-item"><a href="https://hinaproject.co.jp/">運営会社</a></li>
+</ul>
+</div>
+
+<div class="c-navlist__category">
+<div class="c-navlist__headline">お困りの方は</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//syosetu.com/bbs/attention/">質問板</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/help/top/">ヘルプ</a></li>
+<li class="c-navlist__list-item"><a href="//ssl.syosetu.com/inquire/input/customcode/yomou/">お問い合わせ</a></li>
+</ul>
+</div>
+
+<div class="c-navlist__category">
+<div class="c-navlist__headline">小説家になろうグループ</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//syosetu.com/">小説家になろう</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/">小説を読もう！</a></li>
+<li class="c-navlist__list-item"><a href="//pdfnovels.net/">タテ書き小説ネット</a></li>
+<li class="c-navlist__list-item"><a href="//lovenove.syosetu.com/">ラブノベ</a></li>
+<li class="c-navlist__list-item"><a href="//mitemin.net/">みてみん</a></li>
+<li class="c-navlist__list-item"><a href="//dev.syosetu.com/">なろうデベロッパー</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/site/group/">なろうグループ一覧</a></li>
+<li class="c-navlist__list-item"><a href="//mid.syosetu.com/">ミッドナイトノベルズ</a></li>
+</ul>
+</div>
+
+<div class="c-navlist__category">
+<div class="c-navlist__headline">小説を探す</div>
+<ul class="c-navlist__list">
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/search.php">小説検索</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/search/keyword/">人気キーワード</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/pickup/list/">小説PickUp！</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/reviewlist/list/">イチオシレビュー</a></li>
+<li class="c-navlist__list-item"><a href="//syosetu.com/syuppan/list/">書報 (出版作品紹介)</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/rireki/list/">閲覧履歴</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/nolist/nopointlist/">未評価作品一覧</a></li>
+<li class="c-navlist__list-item"><a href="//yomou.syosetu.com/nolist/noimpressionlist/">未感想作品一覧</a></li>
+</ul>
+</div>
+</div>
+</div><!-- p-footer -->
+
+<div class="p-copyright">
+<a class="p-copyright__copyright" href="https://hinaproject.co.jp/">&copy; HinaProject Inc.</a>
+</div>
+</div><!-- footer -->
+
+
+<script type="text/javascript" src="//d-cache.microad.jp/js/td_sn_access.js"></script>
+<script type="text/javascript">
+  microadTd.SN.start({})
+</script>
+
+
+<script type="text/javascript"><!--
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3637811-4', 'auto');
+  ga('send', 'pageview');
+
+
+//--></script>
+</body>
+</html>
