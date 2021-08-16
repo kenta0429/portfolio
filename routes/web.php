@@ -15,13 +15,43 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('news/create', 'Admin\NewsController@add');
+    Route::get('novel/create', 'Admin\novelController@add');
 });
 
+Route::get('XXX', 'AAAController@bbb');
+
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('profile/create', 'Admin\ProfileController@add');
+    Route::get('profile/edit', 'Admin\ProfileController@edit');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('novel/create', 'Admin\novelController@add')->middleware('auth');
+    Route::get('profile/create', 'Admin\ProfileController@add')->middleware('auth');
+    Route::get('profile/edit', 'Admin\ProfileController@add')->middleware('auth');
+});
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+     Route::get('novel/create', 'Admin\novelController@add');
+     Route::post('novel/create', 'Admin\novelController@create');
+     Route::get('profile/create', 'Admin\ProfileController@add');
+     Route::post('profile/create', 'Admin\ProfileController@create');
+     Route::post('profile/edit', 'Admin\ProfileController@update');
+    Route::get('novel/create', 'Admin\novelController@add');
+    Route::post('novel/create', 'Admin\novelController@create');
+    Route::get('novel', 'Admin\novelController@index');
+    Route::get('novel/edit', 'Admin\novelController@edit');
+    Route::post('novel/edit', 'Admin\novelController@update');
+    Route::get('novel/delete', 'Admin\novelController@delete');
+    Route::get('profile/create', 'Admin\ProfileController@add');
+    Route::post('profile/create', 'Admin\ProfileController@create');
+    Route::get('profile', 'Admin\ProfileController@index');
+    Route::get('profile/edit', 'Admin\ProfileController@edit');
+    Route::post('profile/edit', 'Admin\ProfileController@update');
+    Route::get('profile/delete', 'Admin\ProfileController@delete');
 
-Route::get('/home', 'HomeController@index')->name('home');
+});
+ Route::get('/novel', 'novelController@index');
+ Route::get('/profile', 'ProfilesController@index');
