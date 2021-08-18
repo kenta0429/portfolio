@@ -1,0 +1,509 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>新規小説作成</title>
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="alternate" media="handheld" href="http://k.syosetu.com/" />
+<link rel="shortcut icon" href="https://static.syosetu.com/view/images/narou.ico" />
+<link rel="icon" href="https://static.syosetu.com/view/images/narou.ico" />
+
+<script type="text/javascript"><!--
+var domain = 'syosetu.com';
+var ourDomainList = {pdfnovels:'pdfnovels.net', mitemin:'mitemin.net', kasasagi:'kasasagi.hinaproject.com'};
+da_image = new Image();
+da_image.src = 'https://static.syosetu.com/view/images/narou.ico';
+//--></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/lib/jquery.hina.css?oyb9lo" />
+<script type="text/javascript" src="https://static.syosetu.com/view/js/lib/jquery.hina.js?oyez8w"></script>
+<script type="text/javascript" src="https://static.syosetu.com/view/js/user_global.js?pcprwu"></script>
+
+
+
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/global.js?qxatcd"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/user_base.css?piu6vb" />
+
+
+
+<script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/on_off.js?pcprwu"></script>
+<script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/char_count.js?pyqdgo"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/user.css?qr8av5" /><link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/user_second.css?qr8av5" />
+
+<link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/lib/remodal.css?oqe20g" /><link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/lib/remodal-default_pc-theme.css?piu6vb" /><link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/assist_input/assist_input.css?oyez8w" /><link rel="stylesheet" type="text/css" media="all" href="https://static.syosetu.com/view/css/assist_input/pc_assist_input.css?oyez8w" />
+<script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/lib/md5.js?pcprwu"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/lib/jquery.hina.js?oyez8w"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/lib/jquery.easing.1.3.js?pegiqs"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/novel_backup.js?oz308q"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/event/userwrittingnovel_input.js?po8k7b"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/assist_input/assisit_input.js?pm2tgf"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/lib/remodal.min.js?oqe1mv"></script><script language="javascript" type="text/javascript" src="https://static.syosetu.com/view/js/assist_input/pc_assist_input.js?qg2gve"></script>
+
+
+<script type="text/javascript">
+var microadCompass = microadCompass || {};
+microadCompass.queue = microadCompass.queue || [];
+</script>
+<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async></script>
+
+
+
+</head>
+<body><div id="header">
+<div class="clrfix">
+<a href="/" id="narou_link"><img src="https://static.syosetu.com/view/images/common/logo_narou.png?psawph" alt="小説家になろう" /></a>
+
+</div>
+
+
+<div id="head_log">
+<ul>
+<li id="edit"><span onMouseover="mOver()" onMouseout="mOut()">設定変更</span>
+<div class="absolute">
+<span id="usermenu" onMouseover="mOver()" onMouseout="mOut()">
+<a href="https://ssl.syosetu.com/useredit/input/">ユーザ情報編集</a>
+
+<a href="/userblock/list/">ブロックユーザ設定</a>
+<a href="/mute/list/">ミュートユーザ設定</a>
+</span>
+</div>
+</li>
+<li><a href="/site/man/">マニュアル</a></li>
+<li><a href="/login/logout/?token=632ad2c5daa4a250ea91f195178aa384" id="logout">ログアウト</a></li>
+<li>小鳥遊 小鳥 [ID:656908] でログイン中</li>
+</ul>
+</div><!-- head_log -->
+
+
+
+</div><!-- header -->
+
+<!--for  get userid from js -->
+<span id="userid" style="display:none;">656908</span>
+
+<div id="container">
+<div class="narou_modal" data-remodal-id="confirm_char_replace_modal">
+<div class="close" data-remodal-action="close"></div>
+
+<h2>一括置換</h2>
+<h3>置換する文字列</h3>
+<input type="text" id="replacefrom">
+
+<h3>置換後の文字列</h3>
+<input type="text" id="replaceto">
+
+<div class="button_box clearfix">
+<button class="button" id="confirm_char_replace" >すべて置換</button>
+</div>
+</div>
+
+<div class="narou_modal" data-remodal-id="confirmautoindent_modal">
+<div class="close" data-remodal-action="close"></div>
+
+<h2>段落の先頭を一字下げる</h2>
+<p class="guide">
+段落の先頭を自動で一字下げます。<br />
+よろしいですか？
+</p>
+<div class="button_box clearfix">
+<button class="button" id="confirm_autoindent" >OK</button>
+</div>
+</div>
+
+<div class="narou_modal" data-remodal-id="ruby_modal">
+<div class="close" data-remodal-action="close"></div>
+<h2>ルビを挿入する</h2>
+
+<h3>ルビを振る文字</h3>
+<span class="letter_limit">10文字まで</span>
+<input type="text" id="text_with_ruby" class="ruby_text" >
+
+<h3>ルビ</h3>
+<span class="letter_limit">10文字まで</span>
+<input type="text" id="rubytext" class="ruby_text">
+
+<h3 class="preview">プレビュー</h3>
+<div id="ruby_preview_area" class="preview_area"></div>
+
+<div class="button_box clearfix">
+<button class="button" id="ruby_create">ルビの挿入</button>
+<input type="hidden" id="ruby_insert_type" value="">
+</div>
+</div>
+
+<div class="narou_modal" data-remodal-id="parachte_modal">
+<div class="close" data-remodal-action="close"></div>
+
+<h2>傍点を挿入する</h2>
+<h3>傍点を振る文字</h3>
+<input type="text" id="text_parachte">
+
+<h3 class="preview">プレビュー</h3>
+<div id="parachte_preview_area" class="preview_area"></div>
+
+<div class="button_box clearfix">
+<button class="button" id="parachte_create" >傍点の挿入</button>
+<input type="hidden" id="parachte_insert_type" value="">
+</div>
+</div>
+
+<div class="narou_modal" data-remodal-id="illustration_modal">
+<div class="close" data-remodal-action="close"></div>
+
+<h2>挿絵を挿入する</h2>
+<h3>みてみんユーザID</h3>
+<input type="text" id="miteminid">
+
+<h3>iコード</h3>
+<input type="text" id="icode">
+
+<p class="guide border">
+挿絵はみてみんに投稿された画像のみ対応しています。<br />
+ユーザID、iコードはみてみんの画像閲覧ページURLで確認できます。<br />
+https://ユーザID.mitemin.net/iコード/
+</p>
+
+<h3 class="preview">プレビュー</h3>
+<div id="illustration_preview_area" class="preview_area"></div>
+
+<div class="button_box clearfix">
+<button class="button left" id="illustration_preview" >プレビュー</button>
+<button class="button right" id="illustration_create" >挿絵を挿入</button>
+<input type="hidden" id="mitemin_domain" value="mitemin.net">
+</div>
+</div>
+
+
+<div class="narou_modal" data-remodal-id="general_finish_modal">
+<div class="close" data-remodal-action="close"></div>
+
+<h2 id="general_modal_header"></h2>
+<p id="general_modal_content">
+</p>
+<div class="button_box clearfix">
+<button class="button" id="finish_autoindent" data-remodal-action="close">OK</button>
+</div>
+</div>
+
+<div id="contents2">
+<ul class="writter_menu">
+<li class="menu_h">小説メニュー</li>
+<li><a href="/userwrittingnovel/input/">新規小説作成</a></li>
+<li><a href="/userwrittingnovel/list/">執筆中小説</a></li>
+<li><a href="/usernovel/list/">投稿済み小説</a></li>
+<li><a href="/novelcontribute/input/">ダイレクト投稿</a></li>
+<li><a href="/userwrittingnovel/mailrev/">メール小説執筆</a></li>
+</ul><div id="location">
+<h2>新規小説作成</h2>
+<p>
+小説を執筆するページです。<span class="attention">保存はこまめに行ってください。</span>
+</p>
+</div><!-- location -->
+
+<form id="wright_form" action="/userwrittingnovel/add/?token=632ad2c5daa4a250ea91f195178aa384" enctype="multipart/form-data" method="post">
+
+<div class="waku">
+<dl>
+<dt class="noveltitle">
+作品タイトル<label class="letter_limit">※100文字以内</label>
+</dt>
+<dd class="noveltitle">
+<input id="title" type="text" name="karititle" data-require="true" data-maxlength="100" />
+</dd>
+
+<dd class="navi clearfix">
+<a class="assist_button" id="assist_input_button" href="javascript:void(0);">▼入力補助メニューを表示</a>
+<p id="nfchange"><a href="javascript:void(0);" onclick="mainnovel();">本文</a>／<a href="javascript:void(0);" onclick="free();">フリーメモ</a></p>
+
+<div id="assist_input_menu" class="assist_input_menu">
+<div>
+<p>一括変更</p>
+<input type="button" id="char_replace" class="char_replace" value="文字列置換" data-nolock="true" />
+<input type="button" id="autoindent" class="autoindent" value="自動字下げ" data-nolock="true" />
+</div>
+
+<div>
+<p>記法挿入</p>
+<input type="button" id="ruby" class="ruby" value="ルビ" data-nolock="true" />
+<input type="button" id="parachute" class="parachute" value="傍点" data-nolock="true" />
+<input type="button" id="illustration" class="illustration" value="挿絵" data-nolock="true" />
+</div>
+
+<div class="writing_mode">
+<p>表示方向</p>
+<input type="button" class="change_wirting_mode horizontal_writing" value="横" data-nolock="true" />
+<input type="button" class="change_wirting_mode vertical_writing" value="縦" data-nolock="true" />
+</div>
+
+<div>
+<p>表示文字サイズ</p>
+<input type="button" id="change_font_spbig" class="change_font_btn change_font_spbig" value="特大" data-nolock="true" />
+<input type="button" id="change_font_big" class="change_font_btn change_font_big" value="大" data-nolock="true" />
+<input type="button" id="change_font_middle" class="change_font_btn change_font_middle" value="中" data-nolock="true" />
+<input type="button" id="change_font_small" class="change_font_btn change_font_small" value="小" data-nolock="true" />
+<input type="button" id="change_font_default" class="change_font_btn change_font_reset" value="リセット" data-nolock="true" />
+
+</div>
+</div><!-- assist_input_menu -->
+</dd>
+</dl>
+
+<div id="f_n"><dl>
+<dt>小説本文</dt>
+<dd>
+<textarea cols="85" rows="25" id="novel" name="novel" class="backup backup_novel" data-require="true" data-minlength="1" data-maxlength="70000" data-default-text-color="olive" data-error-text-color="red" data-plain-text-id="char_count_number" data-trimmed-text-id="slen" data-line-text-id="char_count_line_number" data-paper-text-id="char_count_paper_number" data-paragraph-text-id="char_count_paragraph_number" data-error-text-id="mes3">
+</textarea>
+<br />
+ファイル投稿：<input id="novel-file" type="file" name="novel-file" /><input type="hidden" name="MAX_FILE_SIZE" value="1048576" />&nbsp;(txtファイルのみ対応 空白・改行を含む7万文字以内)<br />
+</dd>
+</dl>
+</div><!-- f_n -->
+<div id="n_f"><dl>
+<dt>フリーメモ</dt>
+<dd>
+<textarea cols="82" rows="20" id="freememo" name="freememo" class="backup backup_memo">
+</textarea>
+</dd>
+</dl>
+</div><!-- n_f -->
+<div class="button_box">
+<input type="submit" id="wrightsubmit" class="button" value="新規保存" accesskey="s" data-nolock="true" />
+<input type="button" id="previewButton" class="button" value="プレビュー" data-nolock="true" data-url="/novelpreview/top/from/userwrittingnovel_input/" />
+</div><!-- button_box -->
+</div><!-- waku -->
+
+<div id="f_m">
+<div id="writtingnovel_input_l">
+文字数（空白・改行含む）：<span id="char_count_number"></span>字<br />
+文字数（空白・改行含まない）：<span id="slen"></span><span id="mes">字</span><br />
+<span id="mes3" class="attention"></span><br />
+
+行数：<span id="char_count_line_number"></span><br />
+400字詰め原稿用紙：約<span id="char_count_paper_number"></span>枚<br />
+<br />
+<p>※改行や入力など、入力欄で何らかの操作を行うと<br />文字カウントを開始します。</p>
+</div><!-- writtingnovel_input_l -->
+
+<div id="writtingnovel_input_r">
+<h3>挿絵の挿入</h3>
+<a target="_blank" href="https://mitemin.net/" class="op">みてみん</a>に投稿している場合のみ対応。
+<p>
++画像の閲覧ページＵＲＬ+<br />
+https://みてみんユーザＩＤ.mitemin.net/iコード/
+</p>
+<p>
++小説執筆ページに書く記号+<br />
+&lt;iコード|みてみんユーザＩＤ&gt;
+<br /><a href="/man/sashie/">⇒挿絵をつける[マニュアル]</a>
+</p>
+</div><!-- writtingnovel_input_r -->
+</div><!--f_m-->
+</form>
+
+
+<a href="/userwrittingnovel/backup/" class="nav_userwrittingnovel_backup">&gt;&gt;&nbsp;バックアップ一覧&nbsp;&lt;&lt;</a>
+
+
+<div id="navigate">
+<dl>
+<dt class="op"><a href="/man/sippitu/" target="_blank">書き始めよう！</a></dt>
+<dd>〔新規小説作成の作り方〕についてのマニュアルです。</dd>
+
+<dt class="op"><a href="/man/freememo/" target="_blank">フリーメモ機能</a></dt>
+<dd>
+執筆中にメモをつけることができます。<br />
+<span class="attention">このメモは投稿されません</span>のでご注意ください。
+</dd>
+<dt class="op"><a href="/man/assist-input/" target="_blank">入力補助機能</a></dt>
+<dd>
+小説を書くときに便利な補助機能のマニュアルです。
+</dd>
+<dt class="op"><a href="/man/preview/" target="_blank">プレビュー機能</a></dt>
+<dd>
+プレビュー機能では事前に投稿後の表示内容を確認できます。
+</dd>
+<dt class="op"><a href="/man/ruby/" target="_blank">ルビを振る</a></dt>
+<dd>
+※ルビ表示に対応しているブラウザでのみ有効です。
+<p>書き方：<span style="color:#0066aa;">わたしは|山田太郎《やまだたろう》と申します。</span><br />
+| は開始を表す記号で、《 》 に囲まれた文字がルビになります。
+</p>
+</dd>
+<dt>ルビ回避の方法</dt>
+<dd><p class="h2">ルビにしたくない単語がある場合の書き方</p>
+<p>
+ ( ) で囲む直前に | と開始を表す記号を入力してください。
+</p>
+<p>書き方：<span style="color:#0066aa;">わたしは山田太郎|(やまだたろう)と申します。</span>
+</p>
+<p><span class="marginleft">↓</span><span class="marginleft">閲覧時にはこう見えます。</span>
+</p>
+<p>
+見え方：<span style="color:#33aa66;">わたしは山田太郎(やまだたろう)と申します。</span>
+</p>
+</dd>
+<dt>ルビについて</dt>
+<dd>
+<p>
+ルビ及びルビの対象となる部分は10文字以内で入力してください。<br />
+<span class="attention">11文字以上入力された場合はルビが解除されます。</span>
+</p><br />
+「《 》 もしくは( ) の前が漢字」かつ「《 》 もしくは( ) の中がカタカナまたはひらがな」の場合、<span class="attention">自動でルビ対応となります。</span>
+</dd>
+</dl>
+</div><!-- navigate -->
+
+<br class="clr" />
+
+<div id="userglobal_koukoku">
+
+<div id="80f3793d724f656f3c8d5d34b530240b">
+<script type="text/javascript">
+microadCompass.queue.push({
+"spot": "80f3793d724f656f3c8d5d34b530240b",
+"url": "${COMPASS_EXT_URL}",
+"referrer": "${COMPASS_EXT_REF}"
+});
+</script>
+</div>
+
+
+</div><!-- userglobal_koukoku -->
+
+</div><!--contents2-->
+<div id="extra"><div id="home">
+<a href="/user/top/" accesskey="h">ホーム</a>
+</div>
+
+<div id="menu_box">
+<ul>
+<li class="menu_message"><a href="/messagebox/top/">メッセージボックス</a></li>
+</ul>
+<ul>
+<li class="menu_blog"><a href="/userblog/list/">活動報告</a></li>
+<li class="menu_blogcomment"><a href="/userblog/passivelist/">├書かれたコメント一覧</a></li>
+<li class="menu_blogcomment"><a href="/userblog/commentlist/">└書いたコメント一覧</a></li>
+</ul>
+<ul>
+<li class="menu_favnove"><a href="/favnovelmain/list/">ブックマーク</a></li>
+</ul>
+<ul>
+<li class="menu_favuser"><a href="/favuser/list/">お気に入りユーザ</a></li>
+</ul>
+</div>
+
+
+<div id="mypagelink">
+<ul>
+<li><a href="https://mypage.syosetu.com/656908/">マイページ</a></li>
+</ul>
+</div><!-- mypagelink -->
+
+
+<div id="pd_box">
+<h3 onmouseover="pDown1();" onmouseout="pHide1();">なろうグループ内リンク</h3>
+<div class="absolute">
+<ul id="eg" onmouseover="pDown1();" onmouseout="pHide1();">
+<li class="n"><a href="https://syosetu.com/">小説家になろう</a></li>
+<li class="n"><a href="https://yomou.syosetu.com/">小説を読もう！</a></li>
+<li class="n"><a href="https://pdfnovels.net">タテ書き小説ネット</a></li>
+</ul>
+</div>
+
+<h3 onmouseover="pDown2();" onmouseout="pHide2();">ブログ情報</h3>
+<div class="absolute">
+<ul id="eb" onmouseover="pDown2();" onmouseout="pHide2();">
+<li class="n"><a href="https://syosetu.com/blog/list/">新着活動報告</a></li>
+<li class="n"><a href="https://syosetu.com/trackback/list/">トラックバック一覧</a></li>
+<li class="n"><a href="https://syosetu.com/useredit/nish/">ブログパーツ提供</a></li>
+</ul>
+</div>
+
+<h3 onmouseover="pDown3();" onmouseout="pHide3();">小説ランキング</h3>
+<div class="absolute">
+<ul id="er" onmouseover="pDown3();" onmouseout="pHide3();">
+<li class="n"><a href="https://yomou.syosetu.com/rank/top/">総合</a></li>
+<li class="n"><a href="https://yomou.syosetu.com/rank/genretop/">ジャンル別</a></li>
+<li class="n"><a href="https://yomou.syosetu.com/rank/isekaitop/">異世界転生/転移</a></li>
+</ul>
+</div>
+
+<h3 onmouseover="pDown4();" onmouseout="pHide4();">小説PickUp！</h3>
+<div class="absolute">
+<ul id="ep" onmouseover="pDown4();" onmouseout="pHide4();">
+<li class="n"><a href="https://syosetu.com/pickup/list/">小説PickUp！</a></li>
+<li class="n"><a href="https://pdfnovels.net/novel/list/">縦書きPickUp！</a></li>
+</ul>
+</div>
+
+<h3 onmouseover="pDown5();" onmouseout="pHide5();">小説を探す</h3>
+<div class="absolute">
+<ul id="es" onmouseover="pDown5();" onmouseout="pHide5();">
+<li class="n"><a href="https://yomou.syosetu.com/search.php?order=new">新着小説</a></li>
+<li class="n"><a href="https://syosetu.com/syuppan/list/">書報（出版作品紹介）</a></li>
+</ul>
+</div>
+
+<h3 onmouseover="pDown6();" onmouseout="pHide6();">小説閲覧履歴</h3>
+<div class="absolute">
+<ul id="enr" onmouseover="pDown6();" onmouseout="pHide6();">
+<li class="n"><a href="https://yomou.syosetu.com/rireki/list/">小説を読もう！</a></li>
+</ul>
+</div>
+</div><!-- pd_box -->
+<div class="normal_box">
+<h3>辞書</h3>
+<ul>
+<li><a href="https://dictionary.goo.ne.jp/" target="_blank">goo辞書</a></li>
+<li><a href="https://www.excite.co.jp/world/" target="_blank">エキサイト翻訳</a></li>
+<li><a href="https://www.alc.co.jp/" target="_blank">SPACE&nbsp;ALC</a></li>
+<li><a href="https://www.weblio.jp/" target="_blank">Weblio</a></li>
+</ul>
+<div class="a_line"><span class="letter_limit">※別窓が開きます<br />※上記は外部サイトです</span></div>
+</div><!-- normal_box -->
+</div>
+</div><!--container-->
+<!-- フッタここから -->
+<div id="footer">
+<div class="upper"><a href="#">▲ページの上部へ</a></div>
+
+<ul>
+<li><a href="/man/index/">マニュアル目次</a></li>
+<li><a href="/help/top/">ヘルプ</a></li>
+<li><a href="/bbs/attention/">質問板</a></li>
+<li><a href="/site/rule/">利用規約</a></li>
+<li><a href="/site/guideline/">ガイドライン</a></li>
+<li><a href="/site/privacy/">プライバシーポリシー</a></li>
+<li><a href="https://ssl.syosetu.com/inquire/input/">お問い合わせ</a></li>
+<li><a href="https://hinaproject.co.jp/">HinaProject Inc.</a></li>
+</ul>
+</div><!--footer-->
+<!-- フッタここまで -->
+
+
+<script type="text/javascript"><!--
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3637811-4', 'auto');
+  ga('send', 'pageview');
+
+
+//--></script>
+
+
+</body></html>
