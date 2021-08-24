@@ -14,13 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['prefix' => 'admin'], function() {
+Route::group(['prefix' => 'admin'], function () {
     Route::get('novel/create', 'Admin\novelController@add');
 });
 
 Route::get('XXX', 'AAAController@bbb');
 
-Route::group(['prefix' => 'admin'], function() {
+Route::group(['prefix' => 'admin'], function () {
     Route::get('profile/create', 'Admin\ProfileController@add');
     Route::get('profile/edit', 'Admin\ProfileController@edit');
 });
@@ -28,17 +28,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['prefix' => 'admin'], function() {
+Route::group(['prefix' => 'admin'], function () {
     Route::get('novel/create', 'Admin\novelController@add')->middleware('auth');
     Route::get('profile/create', 'Admin\ProfileController@add')->middleware('auth');
     Route::get('profile/edit', 'Admin\ProfileController@add')->middleware('auth');
 });
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
-     Route::get('novel/create', 'Admin\novelController@add');
-     Route::post('novel/create', 'Admin\novelController@create');
-     Route::get('profile/create', 'Admin\ProfileController@add');
-     Route::post('profile/create', 'Admin\ProfileController@create');
-     Route::post('profile/edit', 'Admin\ProfileController@update');
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+    Route::get('novel/create', 'Admin\novelController@add');
+    Route::post('novel/create', 'Admin\novelController@create');
+    Route::get('profile/create', 'Admin\ProfileController@add');
+    Route::post('profile/create', 'Admin\ProfileController@create');
+    Route::post('profile/edit', 'Admin\ProfileController@update');
     Route::get('novel/create', 'Admin\novelController@add');
     Route::post('novel/create', 'Admin\novelController@create');
     Route::get('novel', 'Admin\novelController@index');
@@ -51,7 +51,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('profile/edit', 'Admin\ProfileController@edit');
     Route::post('profile/edit', 'Admin\ProfileController@update');
     Route::get('profile/delete', 'Admin\ProfileController@delete');
-
 });
- Route::get('/novel', 'novelController@index');
- Route::get('/profile', 'ProfilesController@index');
+Route::group(['prefix' => 'novel'], function () {
+    Route::get('/', 'NovelController@index')->name('novel');
+    Route::get('/chapter', 'NovelController@chapter')->name('novel');
+});
+
+Route::get('/profile', 'ProfilesController@index');
