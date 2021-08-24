@@ -51,7 +51,7 @@
         <div class="p-header">
             <div class="p-header__inner">
                 <h1 class="p-header__logo">
-                    <a href="//yomou.syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_yomou.png" alt="小説を読もう！"></a>
+                    <a href="/novel"><img src="//static.syosetu.com/view/images/common/logo_yomou.png" alt="小説を読もう！"></a>
                 </h1>
                 <div class="p-header__description">
                     小説を読もう！は｢小説家になろう｣に投稿された<br>
@@ -72,7 +72,7 @@
                             <a href="//syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_narou.png" alt="小説家になろう"></a>
                         </li>
                     </ul>
-                    <form class="c-form p-header__search js-quick-search" action="//yomou.syosetu.com/search.php">
+                    <form class="c-form p-header__search js-quick-search" action="/novelsearch.php">
                         <div class="c-form__quicksearch">
                             <select class="c-form__select c-form__select--accent" name="search_type">
                                 <option value="novel">小説</option>
