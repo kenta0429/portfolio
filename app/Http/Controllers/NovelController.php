@@ -19,4 +19,19 @@ class NovelController extends Controller
     {
         return view('novel.chapter');
     }
+
+    public function episode0(Request $request)
+    {
+        return view('novel.episode0');
+    }
+
+    public function episode1(Request $request)
+    {
+        return view('novel.episode1');
+    }
+
+    public function episode2(Request $request)
+    {
+        return view('novel.episode2');
+    }
 }

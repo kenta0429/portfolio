@@ -189,7 +189,7 @@
                     <h3></h3>
 
                     <div class="episode ">
-                        <a href="/novel/chapter/">
+                        <a href="/novel/chapter/episode0">
                             <span class="title"><span class="bookmark-dummy"></span>プロローグ　クラリス視点</span>
                             <span class="open-date">
                                 2021.08.22 20:55 </span>
@@ -200,7 +200,7 @@
                     </div>
 
                     <div class="episode ">
-                        <a href="/novel/5628105/870534004/episode/4629396">
+                        <a href="/novel/chapter/episode1">
                             <span class="title"><span class="bookmark-dummy"></span>第１話　騒然となる会場　クラリス視点</span>
                             <span class="open-date">
                                 2021.08.23 07:50 </span>
@@ -211,7 +211,7 @@
                     </div>
 
                     <div class="episode ">
-                        <a href="/novel/5628105/870534004/episode/4633341">
+                        <a href="/novel/chapter/episode2">
                             <span class="title"><span class="bookmark-dummy"></span>第２話　事件翌日の出来事～知らせ～　ジェラール視点（１）</span>
                             <span class="open-date">
                                 2021.08.24 07:50 </span>
