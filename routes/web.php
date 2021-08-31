@@ -54,10 +54,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 });
 Route::group(['prefix' => 'novel'], function () {
     Route::get('/', 'NovelController@index')->name('novel');
-    Route::get('/chapter', 'NovelController@chapter')->name('novel');
-    Route::get('/chapter/episode0', 'NovelController@episode0')->name('novel');
-    Route::get('/chapter/episode1', 'NovelController@episode1')->name('novel');
-    Route::get('/chapter/episode2', 'NovelController@episode2')->name('novel');
+    Route::get('/{novel_id}', 'NovelController@chapter')->name('novel');
+    Route::get('/{novel_id}/{episode_id}', 'NovelController@episode')->name('novel');
 });
 
 Route::get('/profile', 'ProfilesController@index');

@@ -15,23 +15,18 @@ class NovelController extends Controller
         return view('novel.index');
     }
     
-    public function chapter(Request $request)
+    public function chapter(Request $request, $novel_id)
     {
+        //DB novels から小説を取得
         return view('novel.chapter');
     }
 
-    public function episode0(Request $request)
+    public function episode(Request $request, $novel_id, $episode_id)
     {
-        return view('novel.episode0');
+        // dd($novel_id, $episode_id);
+        //DB novels から小説を取得
+        //DB episodes からチャプターの内容を取得
+        return view('novel.episode');
     }
 
-    public function episode1(Request $request)
-    {
-        return view('novel.episode1');
-    }
-
-    public function episode2(Request $request)
-    {
-        return view('novel.episode2');
-    }
 }
