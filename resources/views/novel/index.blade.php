@@ -146,7 +146,7 @@ microadCompass.queue = microadCompass.queue || [];
     </div>
 
     <div class="author">
-      <a href="/author/detail/5628105">柚木ゆず</a>
+    <a href="/writer/1" target="_blank" class="1">氷純</a>
     </div>
 
     <div class="abstract">

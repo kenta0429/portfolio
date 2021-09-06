@@ -52,10 +52,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::post('profile/edit', 'Admin\ProfileController@update');
     Route::get('profile/delete', 'Admin\ProfileController@delete');
 });
+
 Route::group(['prefix' => 'novel'], function () {
     Route::get('/', 'NovelController@index')->name('novel');
     Route::get('/{novel_id}', 'NovelController@chapter')->name('novel');
     Route::get('/{novel_id}/{episode_id}', 'NovelController@episode')->name('novel');
 });
+
+Route::get('writer/{user_id}', 'NovelController@writer')->name('novel');
 
 Route::get('/profile', 'ProfilesController@index');

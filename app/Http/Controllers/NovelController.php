@@ -29,4 +29,9 @@ class NovelController extends Controller
         return view('novel.episode');
     }
 
+    public function writer(Request $request)
+    {
+        return view('novel.writer');
+    }
+
 }

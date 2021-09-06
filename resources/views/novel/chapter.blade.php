@@ -144,7 +144,7 @@
 
       <div class="author">
         <span>
-          <a href="/author/detail/5628105">柚木ゆず</a>
+        <a href="/writer/1" target="_blank" class="1">柚木ゆず</a>
         </span>
       </div>
       <h4>あらすじ</h4>
