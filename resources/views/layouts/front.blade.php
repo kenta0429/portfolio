@@ -11,8 +11,7 @@
 <title>偽小説</title>
 
 <link rel="shortcut icon" href="https://static.syosetu.com/sub/yomouview/images/yomou.ico">
-<link rel="apple-touch-icon-precomposed"
-  href="https://static.syosetu.com/sub/yomouview/images/apple-touch-icon-precomposed.png?ojjr8y">
+<link rel="apple-touch-icon-precomposed" href="https://static.syosetu.com/sub/yomouview/images/apple-touch-icon-precomposed.png?ojjr8y">
 
 <link rel="alternate" type="application/atom+xml" href="https://api.syosetu.com/allnovel.Atom" title="Atom">
 <link rel="stylesheet" href="https://static.syosetu.com/sub/yomouview/css/base_yomou-pc.css?qugxcw">
@@ -31,10 +30,9 @@
 <script src="https://static.syosetu.com/view/js/smp_toggle.js?qsxen2"></script>
 <script type="text/javascript">
   var microadCompass = microadCompass || {};
-        microadCompass.queue = microadCompass.queue || [];
+  microadCompass.queue = microadCompass.queue || [];
 </script>
-<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js"
-  onload="new microadCompass.AdInitializer().initialize();" async></script>
+<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async></script>
 </head>
 
 <body>
@@ -52,19 +50,16 @@
         <div class="p-header__subnav">
           <ul class="p-header__subnav-list">
             <li class="p-header__subnav-item">
-              <a href="//syosetu.com/site/about/"><span class="p-icon p-icon--wakaba"
-                  aria-hidden="true"></span>初めての方へ</a>
+              <a href="//syosetu.com/site/about/"><span class="p-icon p-icon--wakaba" aria-hidden="true"></span>初めての方へ</a>
             </li>
             <li class="p-header__subnav-item">
-              <a href="//syosetu.com/site/man/"><span class="p-icon p-icon--question"
-                  aria-hidden="true"></span>マニュアル</a>
+              <a href="//syosetu.com/site/man/"><span class="p-icon p-icon--question" aria-hidden="true"></span>マニュアル</a>
             </li>
             <li class="p-header__subnav-item">
               <a href="//login">ログイン</a>
             </li>
             <li class="p-header__subnav-item p-header__subnav-item--site">
-              <a href="//syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_narou.png"
-                  alt="小説家になろう"></a>
+              <a href="//syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_narou.png" alt="小説家になろう"></a>
             </li>
           </ul>
           <form class="c-form p-header__search js-quick-search" action="/novelsearch.php">
@@ -74,8 +69,7 @@
                 <option value="user">ユーザ</option>
               </select>
               <input class="c-form__quicksearch-text" type="text" name="word" placeholder="小説を検索">
-              <button class="c-form__quicksearch-button" type="submit" name="button"><span class="p-icon p-icon--search"
-                  aria-label="検索"></span></button>
+              <button class="c-form__quicksearch-button" type="submit" name="button"><span class="p-icon p-icon--search" aria-label="検索"></span></button>
             </div>
           </form>
         </div>
