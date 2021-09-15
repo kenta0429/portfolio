@@ -35,12 +35,12 @@ Route::group(['prefix' => 'admin'], function () {
 });
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('novel/create', 'Admin\novelController@add');
+    Route::get('novel/create', 'Admin\novelController@add');
+    Route::post('novel/create', 'Admin\novelController@create');
     Route::post('novel/create', 'Admin\novelController@create');
     Route::get('profile/create', 'Admin\ProfileController@add');
     Route::post('profile/create', 'Admin\ProfileController@create');
     Route::post('profile/edit', 'Admin\ProfileController@update');
-    Route::get('novel/create', 'Admin\novelController@add');
-    Route::post('novel/create', 'Admin\novelController@create');
     Route::get('novel', 'Admin\novelController@index');
     Route::get('novel/edit', 'Admin\novelController@edit');
     Route::post('novel/edit', 'Admin\novelController@update');
