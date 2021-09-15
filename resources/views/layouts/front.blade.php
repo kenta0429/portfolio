@@ -60,8 +60,7 @@
                   aria-hidden="true"></span>マニュアル</a>
             </li>
             <li class="p-header__subnav-item">
-              <a href="//ssl.syosetu.com/login/input/"><span class="p-icon p-icon--login"
-                  aria-hidden="true"></span>ログイン</a>
+              <a href="//login">ログイン</a>
             </li>
             <li class="p-header__subnav-item p-header__subnav-item--site">
               <a href="//syosetu.com/"><img src="//static.syosetu.com/view/images/common/logo_narou.png"
