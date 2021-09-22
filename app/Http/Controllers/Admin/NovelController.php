@@ -23,6 +23,18 @@ class NovelController extends Controller
         );
     }
 
+    public function chapter()
+    {
+        //認証ユーザの取得
+        $user = Auth::user();
+        // dd($user);
+        return view(
+            'admin.novel.chapter',
+            //データを渡す
+            ['user' => $user,]
+        );
+    }
+
     public function create(Request $request)
     {
         // Varidationを行う
