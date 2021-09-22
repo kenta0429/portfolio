@@ -15,7 +15,7 @@ class NovelController extends Controller
     {
         //認証ユーザの取得
         $user = Auth::user();
-        // dd($usr);
+        // dd($user);
         return view(
             'admin.novel.create',
             //データを渡す
