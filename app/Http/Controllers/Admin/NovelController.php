@@ -23,15 +23,19 @@ class NovelController extends Controller
         );
     }
 
-    public function chapter()
+    public function chapter(Request $request)
     {
         //認証ユーザの取得
         $user = Auth::user();
         // dd($user);
+        $novel = Novel::find($request->novel_id);
         return view(
             'admin.novel.chapter',
             //データを渡す
-            ['user' => $user,]
+            [
+                'user' => $user,
+                'novel' => $novel,
+            ]
         );
     }
 
@@ -70,44 +74,28 @@ class NovelController extends Controller
 
     public function edit(Request $request)
     {
-        // Novel Modelからデータを取得する
         $novel = Novel::find($request->id);
-        if (empty($novel)) {
-            abort(404);
-        }
-        return view('admin.novel.edit', ['novel_form' => $novel]);
+        return view('admin.novel.edit', ['novel' => $novel]);
     }
 
 
     public function update(Request $request)
     {
-        // Validationをかける
-        $this->validate($request, Novel::$rules);
+        //TODO validate
+        // $this->validate($request, Novel::$rules);
+
         // Novel Modelからデータを取得する
         $novel = Novel::find($request->id);
+
         // 送信されてきたフォームデータを格納する
         $novel_form = $request->all();
-        if ($request->remove == 'true') {
-            $novel_form['image_path'] = null;
-        } elseif ($request->file('image')) {
-            $path = $request->file('image')->store('public/image');
-            $novel_form['image_path'] = basename($path);
-        } else {
-            $novel_form['image_path'] = $novel->image_path;
-        }
-
-        unset($novel_form['image']);
-        unset($novel_form['remove']);
         unset($novel_form['_token']);
+
         // 該当するデータを上書きして保存する
         $novel->fill($novel_form)->save();
-        $history = new History;
-        $history->novel_id = $novel->id;
-        $history->edited_at = Carbon::now();
-        $history->save();
-
         return redirect('admin/novel');
     }
+
     public function delete(Request $request)
     {
         // 該当するNovel Modelを取得
