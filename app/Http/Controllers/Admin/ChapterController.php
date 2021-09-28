@@ -44,7 +44,11 @@ class ChapterController extends Controller
     }
 
     public function create(Request $request)
-    {  // Varidationを行う
+    {  
+        // $user = Auth::user();
+        // $novel = Novel::find($request->novel_id);
+        // $chapters = Chapter::where('novel_id', $novel->id)->get();
+        // Varidationを行う
         // $this->validate($request, Chapter::$rules);
         $date = $request->all();
         dd($date);

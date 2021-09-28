@@ -23,6 +23,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::post('novel/{novel_id}/chapter/add', 'Admin\ChapterController@create')->name('admin.chapter.create');
     Route::get('novel/{novel_id}/chapter/add', 'Admin\ChapterController@add')->name('admin.chapter.add');
 
+    //episode
+    Route::get('novel/{novel_id}/{chapter_id}/episode', 'Admin\ChapterController@index')->name('admin.chapter.episode');
+    Route::post('novel/{novel_id}/{chapter_id}/episode/add', 'Admin\ChapterController@create')->name('admin.chapter.episode.create');
+    Route::get('novel/{novel_id}/{chapter_id}/episode/add', 'Admin\ChapterController@add')->name('admin.chapter.episode.add');
+
     //profile
     Route::get('profile', 'Admin\ProfileController@index')->name('admin.profile.index');
     Route::get('profile/create', 'Admin\ProfileController@add');
