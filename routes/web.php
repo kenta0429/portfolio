@@ -20,7 +20,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     
     //chapter
     Route::get('novel/{novel_id}/chapter/', 'Admin\ChapterController@index')->name('admin.chapter');
-    Route::post('novel/{novel_id}/chapter/create', 'Admin\ChapterController@create');
+    Route::post('novel/{novel_id}/chapter/add', 'Admin\ChapterController@create')->name('admin.chapter.create');
     Route::get('novel/{novel_id}/chapter/add', 'Admin\ChapterController@add')->name('admin.chapter.add');
 
     //profile

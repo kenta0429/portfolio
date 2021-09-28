@@ -37,7 +37,7 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-2" for="body">説明</label>
+          <label class="col-md-2" for="body">あらすじ</label>
           <div class="col-md-10">
             <textarea class="form-control" name="summary" rows="20">{{ old('summary') }}</textarea>
           </div>

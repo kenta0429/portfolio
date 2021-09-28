@@ -1,22 +1,24 @@
 @extends('layouts.admin')
 
-@section('title', '小説一覧')
+@section('title', '投稿小説')
 
 @section('content')
 <div class="container">
-  <h2>投稿小説一覧</h2>
+  <h2>投稿小説</h2>
   <a href="{{ route('admin.novel.add')}}" class="btn btn-primary">新規作成</a>
+  <a href="{{route('admin.novel')}}" class="btn btn-outline-primary">戻る</a>
   <div>
     <table class="table table-striped">
-      @foreach ($novels as $novel)
       <tr>
-        <td><a href="{{ route('admin.chapter', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a></td>
+        <td>{{$novel['title']}}</td>
         <td>{{$novel['summary']}}</td>
         <td><a href="{{ route('admin.novel.edit', ['novel_id' => $novel['id']])}}" class="btn btn-primary">編集</a></td>
-        <td><a href="{{ route('admin.novel.delete')}}" class="btn btn-primary">削除</a></td>
       </tr>
-    @endforeach
     </table>
   </div>
+
+  <h2>章名</h2>
+  <a href="{{ route('admin.chapter.add', ['novel_id' => $novel->id])}}" class="btn btn-primary">新規章作成</a>
+
 </div>
 @endsection
