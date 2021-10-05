@@ -11,10 +11,10 @@
 
       <table class="table">
         <tr>
-          <td><input type="text" name="title" value="{{$novel['title']}}"></td>
+          <td><input type="text" name="title" value="{{$novel['title']}}" class="form-control"></td>
         </tr>
         <tr>
-          <td><textarea name="summary">{{$novel['summary']}}</textarea></td>
+          <td><textarea name="summary" class="form-control" rows="5">{{$novel['summary']}}</textarea></td>
         </tr>
       </table>
       <button class="btn btn-primary">更新</button>

@@ -15,15 +15,14 @@ class CreateEpisodesTable extends Migration
     {
         Schema::create('episodes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name',30);
-            $table->string('title',30);
-            $table->integer('chapter_id');
+            $table->string('chapter_name')->nullable();
+            $table->string('subtitle');
+            $table->integer('novel_id');
             $table->text('content');
-            $table->integer('sort_id');
+            $table->integer('sort_id')->nullable();
             // timestampと書いてしまうと、レコード挿入時、更新時に値が入らないので、DB::rawで直接書いてます
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-        
         });
     }
 

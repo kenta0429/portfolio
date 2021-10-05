@@ -15,9 +15,9 @@ class CreateNovelsTable extends Migration
     {
         Schema::create('novels', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title',100);
+            $table->string('title');
             $table->integer('user_id');
-            $table->text('summary',200);
+            $table->text('summary');
             $table->string('is_publish');
             // timestampと書いてしまうと、レコード挿入時、更新時に値が入らないので、DB::rawで直接書いてます
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
