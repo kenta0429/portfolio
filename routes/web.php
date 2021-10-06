@@ -40,9 +40,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 });
 
 Route::group(['prefix' => 'novel'], function () {
-    Route::get('/', 'NovelController@index')->name('novel');
-    Route::get('/{novel_id}', 'NovelController@chapter')->name('novel');
-    Route::get('/{novel_id}/{episode_id}', 'NovelController@episode')->name('novel');
+    Route::get('/', 'NovelController@index')->name('index');
+    Route::get('/{novel_id}', 'NovelController@chapter')->name('chapter');
+    Route::get('/{novel_id}/{episode_id}', 'NovelController@episode')->name('episode');
 });
 
 //TODO name('novel') -> name('write')

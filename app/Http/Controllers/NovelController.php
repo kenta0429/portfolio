@@ -12,7 +12,8 @@ class NovelController extends Controller
     // //use App\novel;
     public function index(Request $request)
     {
-        return view('novel.index');
+        $novels = Novel::all();
+        return view('novel.index',['novels' => $novels]);
     }
     
     public function chapter(Request $request, $novel_id)

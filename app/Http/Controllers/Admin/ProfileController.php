@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Profiles;
 use App\ProfilesHistories;
 use Carbon\Carbon;
+use Symfony\Component\HttpKernel\Profiler\Profile;
 
 class ProfileController extends Controller
 {
@@ -38,15 +39,8 @@ class ProfileController extends Controller
     
      public function index(Request $request)
   {
-      $cond_title = $request->cond_title;
-      if ($cond_title != '') {
-          // 検索されたら検索結果を取得する
-          $posts = Profiles::where('title', $cond_title)->get();
-      } else {
-          // それ以外はすべてのニュースを取得する
-          $posts = Profiles::all();
-      }
-      return view('admin.profile.index', ['posts' => $posts, 'cond_title' => $cond_title]);
+    $profiles = Profiles::find($request->id);
+      return view('admin.profile.index');
   }
   
    public function edit(Request $request)
