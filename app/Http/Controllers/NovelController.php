@@ -19,8 +19,8 @@ class NovelController extends Controller
     
     public function chapter(Request $request, $novel_id)
     {
-        $novels = Novel::all();
-        $episodes = Episode::all();
+        $novels = Novel::find($request->novel_id);
+        $episodes = Episode::where('novel_id', $novels->id)->get();
         //DB novels から小説を取得
         return view('novel.chapter',[
             'novel' => $novels,
