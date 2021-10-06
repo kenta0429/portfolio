@@ -41,7 +41,7 @@
       
   <div class="content-title">
     <h3 class="title">
-    <a href="{{ route('admin.episode', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a>
+    <a href="{{ route('chapter', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a>
     </h3>
   </div>
   <div>

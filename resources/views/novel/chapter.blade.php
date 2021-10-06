@@ -8,24 +8,14 @@
             <span class="p-main-nav__item-name">新着</span>
           </a>
         </li>
-        <li class="p-main-nav__item">
-          <a href="//syosetu.com/favnovelmain/list/">
-            <span class="p-icon p-icon--bookmark" aria-hidden="true"></span>
-            <span class="p-main-nav__item-name">ブックマーク</span>
-          </a>
-        </li>
+        
         <li class="p-main-nav__item">
           <a href="/novelrireki/list/">
             <span class="p-icon p-icon--watch" aria-hidden="true"></span>
             <span class="p-main-nav__item-name">閲覧履歴</span>
           </a>
         </li>
-        <li class="p-main-nav__item">
-          <a href="/novelrank/genretop/">
-            <span class="p-icon p-icon--crown" aria-hidden="true"></span>
-            <span class="p-main-nav__item-name">ランキング</span>
-          </a>
-        </li>
+        
         <li class="p-main-nav__item">
           <a href="/novelsearch.php">
             <span class="p-icon p-icon--search" aria-hidden="true"></span>
@@ -46,7 +36,7 @@
   <div class="cover novels section">
     <div class="content-main">
       <h2 class="title">
-        俺はお前ではなく、彼女を一生涯愛し護り続けると決めたんだ！　そう仰られた元婚約者様へ。貴方が愛する人が、夜会で大問題を起こしたようですよ？
+      <a href="{{ route('chapter', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a>
       </h2>
 
       <div class="author">

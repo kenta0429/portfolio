@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Episode;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\HTML;
 use App\Novel;
@@ -18,8 +19,13 @@ class NovelController extends Controller
     
     public function chapter(Request $request, $novel_id)
     {
+        $novels = Novel::all();
+        $episodes = Episode::all();
         //DB novels から小説を取得
-        return view('novel.chapter');
+        return view('novel.chapter',[
+            'novel' => $novels,
+            'episodes' => $episodes,
+        ]);
     }
 
     public function episode(Request $request, $novel_id, $episode_id)
