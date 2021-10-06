@@ -63,39 +63,32 @@
 
         <div class="episodes">
           <h3></h3>
+          <table class="table table-striped">
+      @foreach ($episodes as $episode)
+      
+  <div class="content-title">
+    <h3 class="title">
+    <a href="{{ route('chapter', ['episode_id' => $episode['id']])}}">{{$episode['subtitle']}}</a>
+    </h3>
+  </div>
+  <div>
 
-          <div class="episode ">
-            <a href="/novel/10/4">
-              <span class="title"><span class="bookmark-dummy"></span>プロローグ　クラリス視点</span>
-              <span class="open-date">
-                2021.08.22 20:55 </span>
-              <span class="counter">
-                1,535文字
-              </span>
-            </a>
-          </div>
+  <div class="other">
+    
+    <span class="updated">
+    更新日 {{$episode['updated_at']}} </span>
+    <span class="created">
+   <br>作成日 {{$episode['created_at']}}  </span>
+  </div>
 
-          <div class="episode ">
-            <a href="/novel/10/5">
-              <span class="title"><span class="bookmark-dummy"></span>第１話　騒然となる会場　クラリス視点</span>
-              <span class="open-date">
-                2021.08.23 07:50 </span>
-              <span class="counter">
-                1,225文字
-              </span>
-            </a>
-          </div>
+    @endforeach
+    </table>
 
-          <div class="episode ">
-            <a href="/novel/10/6">
-              <span class="title"><span class="bookmark-dummy"></span>第２話　事件翌日の出来事～知らせ～　ジェラール視点（１）</span>
-              <span class="open-date">
-                2021.08.24 07:50 </span>
-              <span class="counter">
-                960文字
-              </span>
-            </a>
-          </div>
+         
+
+          
+
+          
         </div>
       </div>
     </div>
