@@ -36,7 +36,7 @@
   <div class="cover novels section">
     <div class="content-main">
       <h2 class="title">
-      <a href="{{ route('chapter', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a>
+        俺はお前ではなく、彼女を一生涯愛し護り続けると決めたんだ！　そう仰られた元婚約者様へ。貴方が愛する人が、夜会で大問題を起こしたようですよ？
       </h2>
 
       <div class="author">
@@ -53,24 +53,6 @@
         <br />
         　ジェラール様。貴方の婚約者であるマリエット様が、侯爵家主催の夜会で大問題を起こしてしまったみたいですよ？<br /><br />
       </div>
-
-      <div class="content-tags">
-        <span class="tag">
-          <a href="/novel/add_tag_counter/1162?category_id=110500" class="">恋愛</a> </span>
-        <span class="tag">
-          <a href="/novel/add_tag_counter/1015?category_id=110500" class="">ざまぁ</a> </span>
-        <span class="tag">
-          <a href="/novel/add_tag_counter/115502?category_id=110500" class="">ざまぁは複数回発生</a> </span>
-        <span class="tag">
-          <a href="/novel/add_tag_counter/1184?category_id=110500" class="">ハッピーエンド</a> </span>
-        <span class="tag">
-          <a href="/novel/add_tag_counter/19722?category_id=110500" class="">自業自得</a> </span>
-        <span class="tag">
-          <a href="/novel/add_tag_counter/131770?category_id=110500" class="">断言してしまった元婚約者</a> </span>
-      </div>
-
-
-
     </div>
     <div id="ScrollUp" class="table-of-contents novels">
       <div class="head">
