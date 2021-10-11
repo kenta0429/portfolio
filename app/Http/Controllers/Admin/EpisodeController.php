@@ -60,12 +60,29 @@ class EpisodeController extends Controller
     {
         $episode = Episode::find($request->episode_id);
         $novel = Novel::find($episode->novel_id);
-        return view('admin.episode.edit', 
-        [
-            'novel' => $novel,
-            'episode' => $episode,
-        ]
-    );
+        return view(
+            'admin.episode.edit',
+            [
+                'novel' => $novel,
+                'episode' => $episode,
+            ]
+        );
     }
 
+    public function update(Request $request)
+    {
+        $episode = Episode::find($request->episode_id);
+        if ($episode) {
+            // $this->validate($request, Episode::$rules);
+            $posts = $request->all();
+            unset($posts['_token']);
+            $episode->fill($posts)->save();
+            return redirect(
+                route(
+                    'admin.episode',
+                    ['novel_id' => $episode['novel_id']]
+                )
+            );
+        }
+    }
 }

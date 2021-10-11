@@ -12,11 +12,11 @@
       <div class="form-group row">
         <label class="col-md-2" for="name">エピソード</label>
         <div class="col-md-10">
-          <input type="text" class="form-control" name="name" value="{{ $episode['chapter_name'] }}">
+          <input type="text" class="form-control" name="chapter_name" value="{{ $episode['chapter_name'] }}">
         </div>
         <label class="col-md-2" for="name">タイトル</label>
         <div class="col-md-10">
-          <input type="text" class="form-control" name="title" value="{{ $episode['subtitle'] }}">
+          <input type="text" class="form-control" name="subtitle" value="{{ $episode['subtitle'] }}">
         </div>
         <label class="col-md-2" for="name">本文</label>
         <div class="col-md-10">

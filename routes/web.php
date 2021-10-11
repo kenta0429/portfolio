@@ -28,24 +28,22 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('novel/{novel_id}/episode/add', 'Admin\EpisodeController@add')->name('admin.episode.add');
     Route::post('novel/{novel_id}/episode/add', 'Admin\EpisodeController@create')->name('admin.episode.create');
     Route::get('episode/edit/{episode_id}', 'Admin\EpisodeController@edit')->name('admin.episode.edit');
-    Route::get('episode/update/{episode_id}', 'Admin\EpisodeController@edit')->name('admin.episode.update');
+    Route::post('episode/update/{episode_id}', 'Admin\EpisodeController@update')->name('admin.episode.update');
 
-    //profile
+    //user
     Route::get('profile', 'Admin\ProfileController@index')->name('admin.profile.index');
-    Route::get('profile/create', 'Admin\ProfileController@add');
-    Route::post('profile/create', 'Admin\ProfileController@create');
-    Route::get('profile/edit', 'Admin\ProfileController@edit');
-    Route::post('profile/edit', 'Admin\ProfileController@update');
-    Route::get('profile/delete', 'Admin\ProfileController@delete');
+    Route::get('profile/edit', 'Admin\ProfileController@edit')->name('admin.profile.edit');
+    Route::post('profile/update', 'Admin\ProfileController@update')->name('admin.profile.update');
+
 });
 
 Route::group(['prefix' => 'novel'], function () {
-    Route::get('/', 'NovelController@index')->name('index');
+    Route::get('/', 'NovelController@index')->name('novel');
     Route::get('/{novel_id}', 'NovelController@chapter')->name('chapter');
     Route::get('/{novel_id}/{episode_id}', 'NovelController@episode')->name('episode');
 });
 
 //TODO name('novel') -> name('write')
-Route::get('writer/{user_id}', 'NovelController@writer')->name('novel');
+Route::get('writer/{user_id}', 'NovelController@writer')->name('writer');
 
 Route::get('/profile', 'ProfilesController@index');
