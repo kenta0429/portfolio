@@ -17,10 +17,6 @@
   {{-- Laravel標準で用意されているJavascriptを読み込みます --}}
   <script src="{{ asset('js/app.js') }}" defer></script>
 
-  <!-- Fonts -->
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-
   <!-- Styles -->
   {{-- Laravel標準で用意されているCSSを読み込みます --}}
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -41,7 +37,7 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <a href="/novel">小説投稿サイト</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Left Side Of Navbar -->
           <ul class="navbar-nav mr-auto">

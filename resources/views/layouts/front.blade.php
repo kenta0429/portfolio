@@ -10,17 +10,16 @@
 
 <title>偽小説</title>
 
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
+  
   <div class="p-header">
     <div class="p-header__inner">
       <h1 class="p-header__logo">
-        <a href="/novel">小説を読もう</a>
+        <a href="/novel">小説投稿サイト</a>
       </h1>
       <div class="p-header__description">
         小説投稿サイト<br>
@@ -40,6 +39,9 @@
     <div id="footer">
       <div class="upper"><a href="#">▲ページの上部へ</a></div>
       
+      <a class="nav-link" href="{{ route('register') }}">新規登録</a>
+      <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+      <a class="nav-link" href="{{ route('admin.novel') }}">小説投稿</a>
       <div id="copyright">kawakami</div>
     </div>
   </div>

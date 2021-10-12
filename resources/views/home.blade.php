@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a class="nav-link" href="{{ route('admin.novel') }}">小説投稿</a>
                 </div>
             </div>
         </div>
