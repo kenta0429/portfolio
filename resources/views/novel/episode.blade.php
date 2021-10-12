@@ -13,7 +13,7 @@
 </div>
 
 <div class="novel_bn">
-  <a href="/novel/chapter/episode1">次へ&nbsp;&gt;&gt;</a><a href="/novel/chapter">目次</a>
+<a href="{{route('chapter', ['novel_id' => $novel->id])}}">エピソード一覧</a>
 </div>
 
 </div>
