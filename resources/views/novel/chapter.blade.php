@@ -18,7 +18,6 @@
     </div>
     <div id="ScrollUp" class="table-of-contents novels">
       <div class="head">
-        <a class="toc current" href="/novel/5628105/870534004">目次</a>
         <div class="body">
           <div class="nav">
             <div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false"
