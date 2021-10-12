@@ -11,7 +11,7 @@
     </div>
     <div>
       <div class="author">
-        <a href="/writer/1" target="_blank" class="1">氷純</a>
+      <a href="{{ route('writer', ['novel_id' => $novel['user_id']])}}">作者</a>
       </div>
       <div class="abstract">
         <div class="details ReadMore">

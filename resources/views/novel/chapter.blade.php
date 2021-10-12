@@ -8,7 +8,7 @@
       </h2>
       <div class="author">
         <span>
-          <a href="/writer/1" target="_blank" class="1">柚木ゆず</a>
+        <a href="{{ route('writer', ['novel_id' => $novel['user_id']])}}">作者</a>
         </span>
       </div>
       <h4>あらすじ</h4>
