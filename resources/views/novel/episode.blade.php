@@ -5,7 +5,7 @@
 </div>
 <!--novel_bn-->
 <a href="{{route('chapter', ['novel_id' => $novel->id])}}">エピソード一覧</a>
-<div id="novel_no">1/32</div>
+
 
 <h2 class="h2">{{ $episode['subtitle']}}</h2>
 <div id="novel_honbun" class="novel_view">
