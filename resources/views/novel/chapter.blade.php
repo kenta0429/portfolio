@@ -8,7 +8,8 @@
       </h2>
       <div class="author">
         <span>
-        <a href="{{ route('writer', ['novel_id' => $novel['user_id']])}}">作者</a>
+          作者：
+          <a href="{{ route('writer', ['novel_id' => $novel['user_id']])}}">{{$novel->user->name}}</a>
         </span>
       </div>
       <h4>あらすじ</h4>
@@ -27,18 +28,18 @@
         </div>
         <div class="episodes">
           <h3></h3>
-          <table class="table table-striped">
+          <ul>
             @foreach ($episodes as $episode)
-            <h3 class="title">
+            <li class="title">
               <a href="{{ route('episode', 
               [
                 'novel_id' => $novel['id'],
                 'episode_id' => $episode['id'],
               ]
             )}}">{{$episode['subtitle']}}</a>
-            </h3>
+            </li>
             @endforeach
-          </table>
+          </ul>
         </div>
       </div>
     </div>

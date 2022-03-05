@@ -12,15 +12,56 @@ use App\User;
 class NovelController extends Controller
 {
     // //use App\novel;
+    //public function top()
+   // {
+   //     $novels = Novel::with('user')->limit(10)->get();
+   //     return view('novel.top', ['novels' => $novels]);
+   // }
+   public function top(Request $request)
+   {
+       //SELECT * FROM novels JOIN users 
+       // ON users.id = novels.user_id 
+       // WHERE is_publish = 1;
+
+       if (empty($request->keyword)) {
+           $novels = Novel::with('user')->where('is_publish', 1)->get();
+       } else {
+           $novels = Novel::with('user')
+               ->where('is_publish', 1)
+               ->where('title', 'like', "%{$request->keyword}%")
+               ->get();
+       }
+       $keyword = (isset($request->keyword)) ? $request->keyword : '';
+       return view('novel.top', [
+           'novels' => $novels,
+           'keyword' => $keyword,
+       ]);
+   }
+
     public function index(Request $request)
     {
-        $novels = Novel::all();
-        return view('novel.index', ['novels' => $novels]);
+        //SELECT * FROM novels JOIN users 
+        // ON users.id = novels.user_id 
+        // WHERE is_publish = 1;
+
+        if (empty($request->keyword)) {
+            $novels = Novel::with('user')->where('is_publish', 1)->get();
+        } else {
+            $novels = Novel::with('user')
+                ->where('is_publish', 1)
+                ->where('title', 'like', "%{$request->keyword}%")
+                ->get();
+        }
+        $keyword = (isset($request->keyword)) ? $request->keyword : '';
+        return view('novel.index', [
+            'novels' => $novels,
+            'keyword' => $keyword,
+        ]);
     }
 
     public function chapter(Request $request, $novel_id)
     {
-        $novel = Novel::find($request->novel_id);
+        $novel = Novel::with('user')->find($request->novel_id);
         $episodes = Episode::where('novel_id', $novel->id)->get();
         //DB novels から小説を取得
         return view('novel.chapter', [

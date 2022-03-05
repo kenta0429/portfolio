@@ -13,7 +13,7 @@
 </div>
 
 <div class="novel_bn">
-<a href="{{route('chapter', ['novel_id' => $novel->id])}}">エピソード一覧</a>
+  <a href="{{route('chapter', ['novel_id' => $novel->id])}}">エピソード一覧</a>
 </div>
 
 </div>

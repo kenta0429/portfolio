@@ -68,7 +68,11 @@ class NovelController extends Controller
 
     public function index(Request $request)
     {
-        $novels = Novel::all();
+        //認証ユーザの取得
+        $user = Auth::user();
+
+        //SELECT * FROM novels WHERE user_id = xx
+        $novels = Novel::where('user_id', $user['id'])->get();
         return view('admin.novel.index', ['novels' => $novels]);
     }
 

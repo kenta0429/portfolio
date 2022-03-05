@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class Novel extends Model
 {
@@ -20,4 +21,11 @@ class Novel extends Model
     {
         return $this->hasMany('App\History');
     }
+
+    //user_id
+    public function user()
+    {
+      return $this->belongsTo(User::class);
+    }
+
 }

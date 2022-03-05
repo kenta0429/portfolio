@@ -1,0 +1,37 @@
+.navbar {
+  background: #468a59;
+}
+
+.nav-link {
+  color: white;
+}
+
+.content-main {
+  margin: 10px 0 0 0;
+}
+
+.content-main .title {
+  padding: 10px 0;
+}
+
+.other {
+  padding: 10px 0;
+  color: #a0a0a0;
+}
+
+#footer {
+  padding: 10px;
+  background: #468a59;
+  text-align: right;
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+.description {
+  padding: 10px;
+  font-size: 11px;
+}
+

@@ -11,9 +11,15 @@
       @foreach ($novels as $novel)
       <tr>
         <td><a href="{{ route('admin.episode', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a></td>
-        <td>{{$novel['summary']}}</td>
+        <td>
+          @if ($novel['is_publish'])
+          <span class="badge badge-primary">公開</span>
+          @else
+          <span class="badge badge-outline-primary">非公開</span>
+          @endif
+          </span>
+        </td>
         <td><a href="{{ route('admin.novel.edit', ['novel_id' => $novel['id']])}}" class="btn btn-primary">編集</a></td>
-        <td><a href="{{ route('admin.novel.delete')}}" class="btn btn-primary">削除</a></td>
       </tr>
     @endforeach
     </table>

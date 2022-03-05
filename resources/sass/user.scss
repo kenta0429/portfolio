@@ -1,0 +1,45 @@
+$theme-color: rgb(70, 138, 89);
+$nav-link-color: white;
+$footer-text-color: white;
+
+.navbar {
+    background: $theme-color;
+}
+
+.nav-link {
+    color: $nav-link-color;
+}
+
+.content-main {
+    margin: 10px 0 0 0;
+}
+
+.content-main .title {
+    padding: 10px 0;
+}
+
+.other {
+    padding: 10px 0;
+    color: #a0a0a0;
+}
+
+#header {
+}
+
+#footer {
+    padding: 10px;
+    background: $theme-color;
+    text-align: right;
+    color: $footer-text-color;
+}
+
+#footer a {
+    color: $footer-text-color;
+}
+
+#copyright {
+}
+.description {
+    padding: 10px;
+    font-size: 11px;
+}

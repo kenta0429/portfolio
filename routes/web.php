@@ -1,11 +1,8 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
+Route::get('/', 'NovelController@top');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
@@ -16,7 +13,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     // Route::get('novel/chapter/{novel_id}', 'Admin\NovelController@chapter')->name('admin.novel.chapter');
     Route::get('novel/edit/{id}', 'Admin\NovelController@edit')->name('admin.novel.edit');
     Route::post('novel/update/{id}', 'Admin\NovelController@update')->name('admin.novel.update');
-    Route::get('novel/delete', 'Admin\NovelController@delete')->name('admin.novel.delete');
+    Route::post('novel/delete/{id}', 'Admin\NovelController@delete')->name('admin.novel.delete');
     
     //chapter
     Route::get('novel/{novel_id}/chapter/', 'Admin\ChapterController@index')->name('admin.chapter');
