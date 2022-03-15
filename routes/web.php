@@ -10,7 +10,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('novel', 'Admin\NovelController@index')->name('admin.novel');
     Route::get('novel/create', 'Admin\NovelController@add')->name('admin.novel.add');
     Route::post('novel/create', 'Admin\NovelController@create')->name('admin.novel.create');
-    // Route::get('novel/chapter/{novel_id}', 'Admin\NovelController@chapter')->name('admin.novel.chapter');
     Route::get('novel/edit/{id}', 'Admin\NovelController@edit')->name('admin.novel.edit');
     Route::post('novel/update/{id}', 'Admin\NovelController@update')->name('admin.novel.update');
     Route::post('novel/delete/{id}', 'Admin\NovelController@delete')->name('admin.novel.delete');

@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="content-main">
+<h2 class="h2">更新順</h2>
   @foreach ($novels as $novel)
   <div class="content-title">
     <h3 class="title">
@@ -16,7 +17,7 @@
     <div class="abstract">
       あらすじ：
       <div class="details ReadMore">
-        <div class="summary">　
+        <div class="summary">
           {{ $novel['summary'] }}
         </div>
       </div>
