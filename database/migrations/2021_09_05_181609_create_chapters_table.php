@@ -19,8 +19,8 @@ class CreateChaptersTable extends Migration
             $table->integer('novel_id');
             $table->integer('sort_id');
             // timestampと書いてしまうと、レコード挿入時、更新時に値が入らないので、DB::rawで直接書いてます
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            //$table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+            //$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         
         });
     }

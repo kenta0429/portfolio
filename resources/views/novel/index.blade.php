@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="content-main">
-<h2 class="h2">更新順</h2>
+<h2 class="h2">小説一覧</h2>
   @foreach ($novels as $novel)
   <div class="content-title">
     <h3 class="title">
@@ -23,10 +23,7 @@
       </div>
     </div>
 
-    <div class="other">
-      <span class="updated">更新日 {{$novel->updated_at->format('Y-m-d H:i')}}</span>
-      <span class="created">作成日 {{$novel->created_at->format('Y-m-d H:i')}}</span>
-    </div>
+  
     @endforeach
   </div>
   @endsection

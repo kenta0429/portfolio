@@ -49,6 +49,7 @@ class EpisodeController extends Controller
             $episode = new Episode;
             $form = $request->all();
             unset($form['_token']);
+            $episode->timestamps = false; 
             $episode->fill($form);
             $episode->save();
         }

@@ -24,10 +24,10 @@ class NovelController extends Controller
        // WHERE is_publish = 1;
 
        if (empty($request->keyword)) {
-           $novels = Novel::with('user')->where('is_publish', 1)->orderBy('created_at', 'desc')->get();
+           $novels = Novel::with('user')->where('is_publish', 1)->get();
        } else {
            $novels = Novel::with('user')
-               ->sortByDesc('created_at')
+               //->sortByDesc('created_at')
                ->where('is_publish', 1)
                ->where('title', 'like', "%{$request->keyword}%")
                ->get();
@@ -46,10 +46,10 @@ class NovelController extends Controller
         // WHERE is_publish = 1;
 
         if (empty($request->keyword)) {
-            $novels = Novel::with('user')->where('is_publish', 1)->orderBy('updated_at', 'desc')->get();
+            $novels = Novel::with('user')->where('is_publish', 1)->get();
         } else {
             $novels = Novel::with('user')
-                ->sortByDesc('updated_at')
+                //->sortByDesc('updated_at')
                 ->where('is_publish', 1)
                 ->where('title', 'like', "%{$request->keyword}%")
                 ->get();

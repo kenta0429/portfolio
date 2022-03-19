@@ -58,7 +58,7 @@ class NovelController extends Controller
         unset($form['_token']);
         // フォームから送信されてきたimageを削除する
         //   unset($form['image']);
-
+        $novel->timestamps = false; 
         // データベースに保存する
         $novel->fill($form);
         $novel->save();

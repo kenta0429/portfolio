@@ -8,7 +8,7 @@
     <a href="{{ route('chapter', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a>
     作者：
     <a href="{{ route('writer', ['novel_id' => $novel['user_id']])}}">{{$novel->user->name}}</a>
-    <br>作成日：{{ $novel->created_at }}
+    
   </p>
   @endforeach
 </div>
