@@ -22,7 +22,7 @@
 
     <main class="container">
       @yield('content')
-      <link rel="stylesheet" href="{{ asset('css/sample.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/index.css') }}">
       <div class="upper"><a href="#">▲ページの上部へ</a></div>
     </main>
 
