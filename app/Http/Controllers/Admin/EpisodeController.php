@@ -44,12 +44,12 @@ class EpisodeController extends Controller
         $novel = Novel::find($request->novel_id);
 
         if ($novel) {
-            $this->validate($request, Episode::$rules);
+            //$this->validate($request, Episode::$rules);
 
             $episode = new Episode;
             $form = $request->all();
             unset($form['_token']);
-            $episode->timestamps = false; 
+            //$episode->timestamps = false; 
             $episode->fill($form);
             $episode->save();
         }

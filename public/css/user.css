@@ -24,6 +24,7 @@
   background: #468a59;
   text-align: right;
   color: white;
+  bottom: 0; 
 }
 
 #footer a {

@@ -7,7 +7,7 @@
   <div class="content-title">
     <h3 class="title">
       <a href="{{ route('chapter', ['novel_id' => $novel['id']])}}">{{$novel['title']}}</a>
-    </h3>
+    </h3><br>作成日：{{ $novel->created_at }}
   </div>
   <div>
     <div class="author">
@@ -22,7 +22,6 @@
         </div>
       </div>
     </div>
-
   
     @endforeach
   </div>

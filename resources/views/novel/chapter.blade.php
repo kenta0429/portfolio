@@ -30,7 +30,7 @@
           <h3></h3>
           <ul>
             @foreach ($episodes as $episode)
-            <li class="title">
+            <li class="title">{{$episode['chapter_name']}}
               <a href="{{ route('episode', 
               [
                 'novel_id' => $novel['id'],
