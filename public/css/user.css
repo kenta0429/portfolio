@@ -9,6 +9,8 @@
 .content-main {
   margin: 10px 0 0 0;
   background: #ffffff00;
+  padding-bottom: 70px;
+  box-sizing: border-box;
 }
 
 .content-main .title {
@@ -25,7 +27,8 @@
   background: #468a59;
   text-align: right;
   color: rgb(255, 255, 255);
-  bottom: 0; 
+  position: fixed;
+  bottom: 0;
 }
 
 #footer a {
