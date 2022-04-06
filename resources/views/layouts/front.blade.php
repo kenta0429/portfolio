@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=1088, maximum-scale=1.0, user-scalable=yes">
 
 <title>{{ config('app.name', '小説投稿サイト') }}</title>
-
+<head>
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/user.css') }}" rel="stylesheet">
 </head>
