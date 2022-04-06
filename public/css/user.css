@@ -3,11 +3,12 @@
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
 }
 
 .content-main {
   margin: 10px 0 0 0;
+  background: #ffffff00;
 }
 
 .content-main .title {
@@ -23,12 +24,12 @@
   padding: 10px;
   background: #468a59;
   text-align: right;
-  color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
   bottom: 0; 
 }
 
 #footer a {
-  color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
 }
 
 .description {

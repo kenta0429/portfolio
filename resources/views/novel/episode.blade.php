@@ -10,8 +10,8 @@
 
 <title>{{ config('app.name', '小説投稿サイト') }}</title>
 
-<link href="{{ mix('css/app.css') }}" rel="stylesheet">
-<link href="{{ mix('css/user.css') }}" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/user.css') }}" rel="stylesheet">
 </head>
 
 <body>
