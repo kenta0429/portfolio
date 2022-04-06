@@ -15,8 +15,8 @@
   <script src="{{ asset('js/app.js') }}" defer></script>
 
   <!-- Styles -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+  <link href="{{ mix('css/admin.css') }}" rel="stylesheet">
   <meta charset="utf-8">
     <title>Sample Title</title>
 
